@@ -1,0 +1,45 @@
+
+//************************** COLORS **************************//
+
+//primary color 
+$primary_color:#0056b8;
+$blue_primary:#0D374F;
+$gray_primary:#f0f0f0;
+$light_gray:#6b6b6b;
+$dark_gray:#e3e6e6;
+$bright_gray:#efefef; 
+$balck-gray : #c6c6c6;
+$dark-black : #706f6f;
+$purple_color : #8232d2;
+$yellow_color : #fdb415;
+$sky_color : #1888ad;
+$olive_color : #d5df22;
+$orange_color : #fbb316;
+$red_color : #ef3822;
+$dark-red : #ee3823;
+
+//Secondary color
+$secondary_color:#4db848;
+
+/*other colors*/
+$white:#fff;
+$black:#000000;
+$validation:#d50000;
+
+
+
+
+//************************** FONTS **************************//
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    font-weight: bold; 
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+

@@ -1,0 +1,36 @@
+// /******************links***************/
+// /*primary_link*/
+// .primary_link {
+//     @include link($primary_color);
+// }
+
+// .primary_link:hover {
+//     @include link($primary_color);
+// }
+
+// .primary_link:active {
+//     @include link($primary_color);
+// }
+
+// /*secondary_link*/
+// .secondary_link {
+//     @include link($secondary_color);
+// }
+
+// .secondary_link:active {
+//     @include link($secondary_color);
+// }
+
+// /*Grayscale_link*/
+// .Grayscale_link {
+//     @include link($light_gray);
+// }
+
+// .Grayscale_link:hover {
+//     @include link($black);
+// }
+
+// .Grayscale_link:active {
+//     @include link($black);
+// }
+

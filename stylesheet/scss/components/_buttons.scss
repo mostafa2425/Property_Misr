@@ -1,0 +1,259 @@
+// /*Primary (Fill)*/
+
+// .Primary_fill {
+//     @include btn($primary_color, $white, $primary_color);
+// }
+
+// .Primary_fill:hover {
+//     @include btn($primary_color, $white, $primary_color);
+// }
+
+// .Primary_fill:active {
+//     @include btn($primary_color, $white, $primary_color);
+//     outline: none;
+// }
+
+// .Primary_fill:disabled {
+//     @include btn($primary_color, $white, $primary_color);
+//     opacity: 0.5;
+// }
+
+
+// /*Primary (Outline)*/
+// .Primary_outline {
+//     @include btn($white, $primary_color, $primary_color);
+// }
+
+// .Primary_outline:hover {
+//    // @include btn($primary_color, $white, $primary_color);
+// }
+
+// .Primary_outline:active {
+//     @include btn($primary_color, $white, $primary_color);
+//     outline: none;
+// }
+
+// .Primary_outline:disabled {
+//     @include btn($white, $primary_color, $primary_color);
+//     opacity: 0.5;
+// }
+
+
+// /*Secondary (Fill)*/
+// .secondary_fill {
+//     @include btn($secondary_color, $white, $secondary_color);
+// }
+
+// .secondary_fill:hover {
+//     // @include btn($secondary_color, $white, $secondary_color);
+// }
+
+// .secondary_fill:active {
+//     @include btn($secondary_color, $white, $secondary_color);
+//     outline: none;
+// }
+
+// .secondary_fill:disabled {
+//     @include btn($secondary_color, $white, $secondary_color);
+//     opacity: 0.5;
+// }
+
+// /*secondary (Outline)*/
+// .secondary_outline {
+//     @include btn($white, $secondary_color, $secondary_color);
+// }
+
+// .secondary_outline:hover {
+//  //   @include btn($secondary_color, $white, $secondary_color);
+// }
+
+// .secondary_outline:active {
+//     @include btn($secondary_color, $white, $secondary_color);
+//     outline: none;
+// }
+
+// .secondary_outline:disabled {
+//     @include btn($white, $secondary_color, $secondary_color);
+//     opacity: 0.5;
+// }
+
+
+// /*purple (outline)*/
+// .purple_outline {
+//     @include btn($white, $purple_color, $purple_color);
+// }
+
+// .purple_outline:hover {
+//    // @include btn($purple_color, $white, $purple_color);
+// }
+
+// .purple_outline:active {
+//     @include btn($purple_color, $white, $purple_color);
+//     outline: none;
+// }
+
+// .purple_outline:disabled {
+//     @include btn($purple_color, $white, $purple_color);
+//     opacity: 0.5;
+// }
+
+// /*purple (fill)*/
+// .purple_fill {
+//     @include btn($purple_color, $white,  $purple_color);
+// }
+
+// .purple_fill:hover {
+//  //   @include btn($purple_color, $white,  $purple_color);
+// }
+
+// .purple_fill:active {
+//     @include btn($purple_color, $white,  $purple_color);
+//     outline: none;
+// }
+
+// .purple_fill:disabled {
+//     @include btn($purple_color, $white,  $purple_color);
+//     opacity: 0.5;
+// }
+
+// /*yellow (fill)*/
+// .yellow_fill {
+//     @include btn($yellow_color, $white,  $yellow_color);
+// }
+
+// .yellow_fill:hover {
+//     @include btn($yellow_color, $white,  $yellow_color);
+// }
+
+// .yellow_fill:active {
+//     @include btn($yellow_color, $white,  $yellow_color);
+//     outline: none;
+// }
+
+// .yellow_fill:disabled {
+//     @include btn($yellow_color, $white,  $yellow_color);
+//     opacity: 0.5;
+// }
+
+// /*white (Outline)*/
+// .white_outline {
+//     @include btn(transparent, $white, $white);
+// }
+
+// .white_outline:hover {
+//    @include btn(transparent, $white, $white);
+// }
+
+// .white_outline:active {
+//     @include btn(transparent, $white, $white);
+//     outline: none;
+// }
+
+// .white_outline:disabled {
+//     @include btn(transparent, $white, $white);
+//     opacity: 0.5;
+// }
+
+// /*black (Outline)*/
+// .black_outline {
+//     @include btn(transparent, $black, $black);
+// }
+
+// .black_outline:hover {
+//    @include btn(transparent, $black, $black);
+// }
+
+// .black_outline:active {
+//     @include btn(transparent, $black, $black);
+//     outline: none;
+// }
+
+// .black_outline:disabled {
+//     @include btn(transparent, $black, $black);
+//     opacity: 0.5;
+// }
+
+// /*Grayscale Fill*/
+
+// .grayscale_fill {
+//     @include btn($light_gray, $black, $light_gray);
+// }
+
+// .grayscale_fill:hover {
+//   //  @include btn($light_gray, $black, $light_gray);
+// }
+
+// .grayscale_fill:active {
+//     @include btn($light_gray, $black, $light_gray);
+//     outline: none;
+// }
+
+// .grayscale_fill:disabled {
+//     @include btn($light_gray, $black, $light_gray);
+//     opacity: 0.5;
+// }
+
+// /* darkgray  Fill*/
+
+// .darkgray_fill {
+//     @include btn($light_gray, $white, $light_gray);
+// }
+
+// .darkgray_fill:hover {
+//    // @include btn($light_gray, $white, $light_gray);
+// }
+
+// .darkgray_fill:active {
+//     @include btn($light_gray, $white, $light_gray);
+//     box-shadow: 0px 0px 0px 4px #dadce0;
+// }
+
+// .darkgray_fill:disabled {
+//     @include btn($light_gray, $white, $light_gray);
+//     opacity: 0.5;
+// }
+// /* darkred  Fill*/
+
+// .darkred_fill {
+//     @include btn($dark-red, $white, $dark-red);
+// }
+
+// .darkred_fill:hover {
+//   //  @include btn($dark-red, $white, $dark-red);
+// }
+
+// .darkred_fill:active {
+//     @include btn($dark-red, $white, $dark-red);
+//     box-shadow: 0px 0px 0px 4px #dadce0;
+// }
+
+// .darkred_fill:disabled {
+//     @include btn($dark-red, $white, $dark-red);
+//     opacity: 0.5;
+// }
+
+// .balckgray_fill {
+//     @include btn($balck-gray, $dark-black, $balck-gray);
+// }  
+
+// .darkred_outline {
+//     @include btn(transparent, $dark-red, $dark-red);
+// } 
+
+ 
+// .ciecle{
+//     @extend  %flexCenter;
+//     max-width: 72px;
+//     max-height: 72px;
+//     width: 72px;
+//     height: 72px;
+//     border-radius: 50% !important;
+// }
+
+// .btn-lg{
+//     height: 50px;
+//     font-size: 1.25rem;
+//     font-weight: bold;
+//     padding-left: 30px;
+//     padding-right: 30px;
+// }
