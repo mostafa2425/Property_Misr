@@ -1,3 +1,86 @@
-body{
+body {
     background: beige;
+    color: #FFF;
+}
+
+.root {
+    .main-wrapper {
+        .main-content {
+            // background: $blue_primary;
+
+            .services-wrapper {
+                .sevice-card {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $bright_gray;
+                    width: 100%;
+                    height: 100%;
+                    min-height: 200px;
+                    margin-bottom: 20px;
+                    margin-right: 20px;
+                    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+                    transition: box-shadow 0.3s ease-in-out;
+                    border-radius: 4px;
+                    &:hover{
+                        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+                    }
+                }
+            }
+            
+            .Partner-wrapper{
+                header{
+                    @extend %flexBetween;
+                }
+                .slider-item{
+                    height: 150px;
+                    margin: 0 30px;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .projects-wrapper{
+                header{
+                    @extend %flexBetween;
+                }
+                .slider-item{
+                    height: 250px;
+                    margin: 0 30px;
+                    position: relative;
+                    overflow: hidden;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        opacity: 0.7;
+                        transition: all 0.5s;
+                    }
+                    .description-holder{
+                        @extend %flexCenter;
+                        color: $black;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &:hover{
+                        img{
+                            opacity: 1;
+                            transform: rotate(3deg) scale(1.2);
+                        }
+                    }
+                }
+            }
+        }
+
+        .filter-content {
+            background: $dark_gray;
+        }
+    }
 }

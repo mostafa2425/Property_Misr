@@ -1,0 +1,64 @@
+header {
+    &.main-header {
+        background-color: $primary_color;
+        color: $black;
+        min-height: 60px;
+        @extend %flexCenter;
+
+        ul {
+            display: flex;
+            justify-content: center;
+
+            &>li {
+                margin-right: 20px;
+                position: relative;
+                transition: all ease 1s;
+                &:last-of-type {
+                    margin-right: 0;
+                }
+
+                body.rtl & {
+                    margin-right: 0;
+                    margin-left: 20px;
+
+                    &:last-of-type {
+                        margin-right: 20px;
+                        margin-left: 0;
+                    }
+                }
+
+                a {
+                    color: $white;
+                }
+                &::after {
+                    content: '';
+                    visibility: hidden;
+                    position: absolute;
+                    width: 0;
+                    height: 1.5px;
+                    background: $white;
+                    bottom: -5px;
+                    left: 40%;
+                    right: 40%;
+                    // transform: translateX(-50%);
+                    transition: all ease 0.4s;
+                }
+                &.active {
+                    &::after {
+                        visibility: visible;
+                        width: 100%;
+                    }
+                }
+                &:hover{
+                    &::after {
+                        visibility: visible; 
+                        width: 100%;
+                        left: 0;
+                        right: 0;
+                        // transform: translate(0)
+                    }
+                }
+            }
+        }
+    }
+}
