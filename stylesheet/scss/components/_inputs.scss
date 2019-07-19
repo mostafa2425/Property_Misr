@@ -1,0 +1,101 @@
+.inp {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 280px;
+    //transform: rotateX(45deg) rotateY(-10deg) rotate(25deg) scale(2)
+    textarea{
+        width: 100%;
+        background: #e3e6e6 !important;
+        border: 0;
+        padding: 10px;
+        color: #9098A9;
+        &+ .label{
+            top: 5px;
+        }
+        &:not(:placeholder-shown) {
+            &+span {
+                color: $primary_color;
+                transform: translateY(-26px) scale(.75);
+            }
+        }
+        &:focus {
+            background: none;
+            outline: none;
+            border-color: $primary_color;
+            &+span {
+                color: $primary_color;
+                transform: translateY(-26px) scale(.75);
+
+                &+.border {
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+
+    .label {
+        position: absolute;
+        top: 16px;
+        left: 5px;
+        font-size: 15px;
+        color: #9098A9;
+        font-weight: 500;
+        transform-origin: 0 0;
+        transition: all .2s ease;
+        padding-left: 0;
+    }
+
+    .border {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        transform: scaleX(0);
+        transform-origin: 0 0;
+        transition: all .15s;
+    }
+
+    input {
+        // background: transparent !important;
+        -webkit-appearance: none;
+        width: 100%;
+        border: 0;
+        font-family: inherit;
+        padding: 12px 0;
+        height: 48px;
+        font-size: 16px;
+        font-weight: 500;
+        border-bottom: 2px solid #C8CCD4;
+        background: none;
+        border-radius: 0;
+        color: #223254;
+        transition: all .15s ease;
+
+        // &:hover {
+        //     background: rgba(#223254, .03);
+        // }
+
+        &:not(:placeholder-shown) {
+            &+span {
+                color: $primary_color;
+                transform: translateY(-26px) scale(.75);
+            }
+        }
+
+        &:focus {
+            background: none;
+            outline: none;
+            border-color: $primary_color;
+            &+span {
+                color: $primary_color;
+                transform: translateY(-20px) scale(.75);
+
+                &+.border {
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+}
