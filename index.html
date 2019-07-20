@@ -28,39 +28,57 @@
                         <div class="main-content mr-30">
                             <!-- strat slider content -->
                             <div class="slider-wrapper">
-                                    <div class="search-section-wrapper">
-                                        <h1>Find your new home today.</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec risus egestas, vestibulum arcu.</p>
-                                        <div class="input-group search-input">
-                                            <input type="text" class="form-control" placeholder="Enter an address or city">
-                                            <div class="input-group-append">
-                                              <button class="btn bg_primary white_text" type="button">
-                                                <i class="fa fa-search"></i>
-                                              </button>
-                                            </div>
-                                          </div>
-                                        </div>
-                            <div class="slider-content">
-                                <div class="slider-item">
-                                    <div class="overlay">
-                                        <!-- <h2>heliopolis</h2>
-                                        <p>korba district</p> -->
+
+                                <!-- search with slider 1 not good with slider tow -->
+
+                            <!-- <div class="search-section-wrapper">
+                                <h1>Find your new home today.</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec risus egestas, vestibulum arcu.</p>
+                                <div class="input-group search-input">
+                                    <input type="text" class="form-control" placeholder="Enter an address or city">
+                                    <div class="input-group-append">
+                                        <button class="btn bg_primary white_text" type="button">
+                                        <i class="fa fa-search"></i>
+                                        </button>
                                     </div>
+                                    </div>
+                                </div> -->
+
+                                <!-- start slider one -->
+
+                            <!-- <div class="slider-content">
+                                <div class="slider-item">
+                                    <div class="overlay"></div>
                                     <img src="images/project1.jpg" alt="">
                                 </div>
                                 <div class="slider-item">
+                                        <div class="overlay"></div>
                                         <img src="images/project2.jpg" alt="">
                                 </div>
                                 <div class="slider-item">
+                                        <div class="overlay"></div>
                                         <img src="images/project3.jpg" alt="">
                                 </div>
                                 <div class="slider-item">
+                                        <div class="overlay"></div>
                                         <img src="images/project1.jpg" alt="">
                                 </div>
                                 <div class="slider-item">
+                                        <div class="overlay"></div>
                                         <img src="images/project2.jpg" alt="">
                                 </div>
-                            </div>
+                            </div> -->
+                        <!-- slider tow option -->
+
+                        <ul class="cb-slideshow">
+                                <li><span>Image 01</span><div><h3>re·lax·a·tion</h3></div></li>
+                                <li><span>Image 02</span><div><h3>qui·e·tude</h3></div></li>
+                                <li><span>Image 03</span><div><h3>bal·ance</h3></div></li>
+                                <li><span>Image 04</span><div><h3>e·qua·nim·i·ty</h3></div></li>
+                                <li><span>Image 05</span><div><h3>com·po·sure</h3></div></li>
+                                <li><span>Image 06</span><div><h3>se·ren·i·ty</h3></div></li>
+                            </ul>
+
                         </div>
 
                             <!-- start our partner content -->
@@ -105,7 +123,7 @@
                                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful.</p>
                                     </div>
                                     <div class="col-md-6 mb-80">
-                                        <img class="img-fluid" src="images/project2.jpg" alt="">
+                                        <img class="img-fluid" src="images/deal.jpg" alt="">
                                     </div>
                                     <div class="col-4 mb-5">
                                         <div class="sevice-card p-5">
@@ -331,9 +349,11 @@
         $('.slider-content').slick({
             // dots: true,
             infinite: true,
-            speed: 500,
+            autoplay: true,
+            autoplaySpeed: 2000,
             fade: true,
-            cssEase: 'linear',
+            touchMove: false,
+            cssEase: 'ease',
             arrows : false,
         });
         // function myMap() {
