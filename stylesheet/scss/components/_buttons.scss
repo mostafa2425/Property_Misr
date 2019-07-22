@@ -122,9 +122,9 @@
 
 
 // /*Secondary (Fill)*/
-// .secondary_fill {
-//     @include btn($secondary_color, $white, $secondary_color);
-// }
+.secondary_fill {
+    @include btn($secondary_color, $white, $secondary_color);
+}
 
 // .secondary_fill:hover {
 //     // @include btn($secondary_color, $white, $secondary_color);

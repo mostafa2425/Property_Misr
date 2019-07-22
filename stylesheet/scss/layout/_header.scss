@@ -4,7 +4,9 @@ header {
         color: $black;
         min-height: 60px;
         @extend %flexCenter;
-
+        position: sticky;
+        top: 0;
+        z-index: 555555;
         ul {
             display: flex;
             justify-content: center;

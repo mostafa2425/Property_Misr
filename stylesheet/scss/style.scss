@@ -10,7 +10,9 @@
 @import "components/buttons", // Components and modules
         "components/links",
         "components/inputs",
-        "components/plugins";
+        "components/plugins",
+        "components/_dropdownElastic", 
+        "components/_cardExpanison";
 
 @import "layout/header", // Layout related stylesheets        
         "layout/footer";

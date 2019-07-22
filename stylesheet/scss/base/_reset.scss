@@ -163,6 +163,9 @@ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
+.tooltip{
+    z-index: 100;
+}
 
 a:focus {
     outline: none; 
@@ -270,5 +273,10 @@ input[type=number]::-webkit-outer-spin-button {
 .k-widget, .k-widget *, 
 .k-widget :before {
     box-sizing: border-box;
+}
+
+// size of icon
+[class^="icon-"]:before, [class*=" icon-"]:before{
+    font-size: 20px !important;
 }
 
