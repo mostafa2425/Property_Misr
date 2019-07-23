@@ -8,11 +8,15 @@
         "base/typography";
 
 @import "components/buttons", // Components and modules
-        "components/links",
+        "components/links", 
+        "components/textAnimation", 
         "components/inputs",
         "components/plugins",
-        "components/_dropdownElastic", 
-        "components/_cardExpanison";
+        // "components/slick-theme", 
+        // "components/slick",  
+        "components/slickSlider",  
+        "components/dropdownElastic", 
+        "components/cardExpanison";
 
 @import "layout/header", // Layout related stylesheets        
         "layout/footer";

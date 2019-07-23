@@ -1,0 +1,13 @@
+.slick-dots li.slick-active button:before,
+.slick-dots li button:hover:before,{
+    color: $primary_color;
+}
+.slick-prev:before, .slick-next:before{
+    color: $primary_color;
+    font-size: 30px;
+}
+.project-slider{
+    .slick-dots{
+        bottom: -40px;
+    }
+}

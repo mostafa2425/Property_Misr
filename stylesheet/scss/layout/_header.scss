@@ -7,6 +7,10 @@ header {
         position: sticky;
         top: 0;
         z-index: 555555;
+        .logo-text{
+            position: absolute;
+            left: 20px;
+        }
         ul {
             display: flex;
             justify-content: center;

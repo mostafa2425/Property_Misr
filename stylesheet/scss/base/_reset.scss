@@ -280,3 +280,20 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 20px !important;
 }
 
+body{
+    /* width */
+&::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $primary_color;
+    border-radius: 4px; 
+  }
+}
