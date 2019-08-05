@@ -89,6 +89,7 @@ body.body--hidden .content--related {
 	width: 95%;
 	max-width: 1366px;
 	margin: 0 auto;
+	// margin-top: 240px;
 }
 
 /* CARD */
@@ -100,6 +101,19 @@ body.body--hidden .content--related {
 	height: 0;
 	margin: 2%;
 	padding-bottom: 20%;
+	border: 0;
+	@include mq("tablet") {  // width 768
+		width: 46%;
+	}
+	@include mq("phablet") {  // width 640
+		width: 96%;
+		.card__caption{
+			padding: 30px 50px !important;
+		}
+		.card__copy{
+			padding: 25px 30px 100px !important;
+		}
+	}
 }
 
 .card__container {
@@ -112,13 +126,30 @@ body.body--hidden .content--related {
 	height: 100%;
 	-webkit-transform: translate3d(0, 0, 0);
 	/* prevents flicker */
-
 	-webkit-overflow-scrolling: touch;
+	    /* width */
+		&::-webkit-scrollbar {
+			width: 8px;
+		  }
+		  
+		  /* Track */
+		  &::-webkit-scrollbar-track {
+			background: #f1f1f1; 
+		  }
+		  
+		  /* Handle */
+		  &::-webkit-scrollbar-thumb {
+			background: $primary_color;
+			// width: 6px;
+			border-radius: 4px; 
+		  }
+
 }
 
 .card__container--closed {
 	position: absolute;
 	overflow: hidden;
+
 }
 
 .card__image {

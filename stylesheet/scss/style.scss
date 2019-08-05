@@ -11,6 +11,7 @@
         "components/links", 
         "components/textAnimation", 
         "components/inputs",
+        "components/popup",
         "components/plugins",
         // "components/slick-theme", 
         // "components/slick",  
@@ -21,7 +22,8 @@
 @import "layout/header", // Layout related stylesheets        
         "layout/footer";
 
-@import "pages/home"; // Page-specific stylesheets
+@import "pages/home", // Page-specific stylesheets
+        "pages/projects";
 
         
 

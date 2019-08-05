@@ -340,5 +340,120 @@
 //     padding-right: 30px;
 // }
 
+.scale-div{
+	transform: translateX(-50%) scale(0) !important;
+}
+.send-message-wrapper{
+	display: flex;
+	align-items: center;
+	padding: 20px 30px;
+	position: fixed;
+	left: -91px;
+	background-color: $primary_color;
+	transform: rotate(90deg);
+	color: #FFF;
+	height:40px;
+	top: 50%;
+	z-index: 4444;
+	box-shadow: 0 0 14px 8px rgba(0,0,0,.17);
+	cursor: pointer;
+	overflow: hidden;
+	border-top-left-radius: 30px;
+	transition: all 0.7s;
+	&::after{
+		content: '';
+		position: absolute;
+		top: -10px;
+		left: -35px;
+		height: 100%;
+		background: $secondary_color;
+		width: 60px;
+		border-radius: 30px;
+	}
+	p{
+		display: flex;
+		align-items: center;
+		transform: rotate(180deg);
+		font-size: 16px;
+	}
+	i{
+		margin-left: 8px;
+	}
+}
 
-
+.meassage-body{
+	width: 300px;
+	display: flex;
+	align-items: flex-start;
+	position: fixed;
+	z-index: 3333333;
+	bottom: 0;
+	left: 0;
+	transition: all 0.7s;
+	.close-btn{
+		button{
+			width: 25px;
+			height: 25px;
+			display: flex;
+			align-items: center;
+			background: #DDD;
+			border-radius: 50%;
+			justify-content: center;
+			border: 1.5px solid #000;
+		}
+	}
+	header{
+		width: 100%!important;
+		height: 70px!important;
+		background-color: $primary_color;
+		display: flex;
+		align-items: center;
+		color: #FFF;
+		position: relative;
+		overflow: hidden;
+		border-top-right-radius: 30px; 
+		border-top-left-radius: 6px; 
+		&::after{
+			content: '';
+			position: absolute;
+			top: -55px;
+			right: -25px;
+			height: 115%;
+			background: $secondary_color;
+			width: 60px;
+			border-radius: 30px;
+			
+		}
+	}
+	form{
+		background: #f8f8f8;
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+		input,
+		textarea{
+			background-color: transparent;
+			border-radius: 4px !important;
+			box-shadow: inset 0 1px 3px 0 rgba(0,0,0,.1) !important;
+			border: 1px solid #ccc;
+			height: 50px;
+			border-radius: 0;
+			box-shadow: none;
+			margin-bottom: 20px;
+			text-indent: 10px;
+			cursor: default;
+			&:focus{
+				border-color: $primary_color;
+				box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(152, 116, 84, 0.6) !important;
+				outline: none;
+			}
+			@include input-placeholder {
+				color: #697582;
+			}
+		}
+		textarea{
+			padding-top: 20px;
+			height: auto;
+		}  
+	}
+}

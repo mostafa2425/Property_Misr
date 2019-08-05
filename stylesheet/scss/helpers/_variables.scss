@@ -2,7 +2,8 @@
 //************************** COLORS **************************//
 
 //primary color 
-$primary_color:#0056b8;
+// $primary_color:#0056b8;
+$primary_color:#987454;
 $blue_primary:#0D374F;
 $gray_primary:#f0f0f0;
 $light_gray:#6b6b6b;
@@ -19,7 +20,8 @@ $red_color : #ef3822;
 $dark-red : #ee3823;
 
 //Secondary color
-$secondary_color:#4db848;
+// $secondary_color:#4db848;
+$secondary_color:#549873;
 
 /*other colors*/
 $white:#fff;
@@ -59,20 +61,36 @@ $slider-unicode-color: #726204 !default;
 
 //************************** FONTS **************************//
 
+// @font-face {
+//     font-family: roboto;
+//     src: url(../fonts/Roboto/Roboto-Regular.ttf);
+// }
+
+// @font-face {
+//     font-family: roboto;
+//     font-weight: bold; 
+//     src: url(../fonts/Roboto/Roboto-Bold.ttf);
+// }
+
 @font-face {
-    font-family: roboto;
-    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+    font-family: cairo;
+    src: url(../fonts/Cairo/Cairo-Regular.ttf);
+}
+
+@font-face {
+    font-family: cairo;
+    font-weight: bold; 
+    src: url(../fonts/Cairo/Cairo-Bold.ttf);
 }
 
 @font-face {
     font-family: fontello;
     src: url(../fonts/fontello.ttf);
 }
-
 @font-face {
-    font-family: roboto;
-    font-weight: bold; 
-    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+    font-family: icomoon;
+    src: url(../fonts/icomoon.ttf);
 }
+
 
 

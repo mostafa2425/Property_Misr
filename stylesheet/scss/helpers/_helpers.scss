@@ -32,6 +32,13 @@
         padding-right: 1.25rem !important;
     }
 }
+.pl-40{
+    padding-left: 40px !important;
+    body.rtl &{
+        padding-left: 0 !important;
+        padding-right: 40px !important;
+    }
+}
 .ml-20{
     margin-left: 1.25rem !important;
 
@@ -119,5 +126,10 @@
 @include mq("ipad") {  // width 992
     body,html{
         font-size : 14px !important;
+    }
+}
+@include mq("tablet-small") {  // width 640
+    body,html{
+        font-size : 13px !important;
     }
 }

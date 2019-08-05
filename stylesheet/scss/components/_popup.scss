@@ -1,0 +1,69 @@
+.ask-form-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(55, 55, 55, 0.31);
+    z-index: 99999999;
+    display: none;
+    form{
+		background: #f8f8f8;
+		display: flex;
+		flex-direction: column;
+        // padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        // background-color: #FFF;
+        border-radius: 6px;
+        padding: 40px 90px;
+        width: 50%;
+        h3{
+            font-size: 20px;
+            font-weight: bold;
+            color: $primary_color;
+            padding-bottom: 35px;
+        }
+		input,
+		textarea{
+			background-color: transparent;
+			border-radius: 4px !important;
+			box-shadow: inset 0 1px 3px 0 rgba(0,0,0,.1) !important;
+			border: 1px solid #ccc;
+			height: 50px;
+			border-radius: 0;
+			box-shadow: none;
+			margin-bottom: 20px;
+			text-indent: 10px;
+            cursor: default;
+            width: 100%;
+			&:focus{
+				border-color: $primary_color;
+                box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(152, 116, 84, 0.6) !important; 
+                outline: none;
+			}
+			@include input-placeholder {
+				color: #697582;
+			}
+		}
+		textarea{
+			padding-top: 20px;
+			height: auto;
+        }  
+        @include mq("ipad") {  // width 992
+            width: 60%;
+            padding: 40px 60px;
+        }
+        @include mq("tablet") {  // width 768
+            width: 70%;
+            padding: 30px 50px;
+        }
+        @include mq("phablet") {  // width 576
+            width: 85% !important;
+            padding: 25px 40px;
+        }
+	}
+}
+

@@ -5,33 +5,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="stylesheet/bootstrtp/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="stylesheet/slick/slick/slick-theme.css">
     <link rel="stylesheet" href="stylesheet/slick/slick/slick.css">
+    <link rel="stylesheet" href="stylesheet/css/animate.css">
     <link rel="stylesheet" href="stylesheet/css/style.css">
     <link rel="stylesheet" href="stylesheet/css/fontello.css">
     <title>home</title>
+    <style>
+        .se-pre-con {
+            display: none;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 99999999999999999999999999999999999999;
+	background: url(https://j2n9a3i8.stackpathcdn.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+}
+    </style>
 </head>
 <body>
+    <div class="se-pre-con"></div>
+    <div class="ask-form-popup">
+            <form class="">
+                <div class="form-row">
+                    <div class="col-12 text-center">
+                        <h3>Send Us a Message</h3>
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="col-12">
+                        <input type="email" class="form-control" placeholder="E-Mail">
+                    </div>
+                    <div class="col-12">
+                        <input type="tel" class="form-control" placeholder="Phone">
+                    </div>
+                    <div class="col-12">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="Primary_fill button--moema ">Send Message</button>
+            </form>
+        </div>
     <div class="root">
-        
+            
         <div class="home-wrapper">
-            <header class="main-header">
-                <a href="" class="link--yaku logo-text">
-                    <span>P</span><span>r</span><span>o</span><span>p</span><span>e</span><span>r</span><span>t</span><span>y</span>  
-                    <span>M</span><span>i</span><span>s</span><span>r</span>
+            <!-- start header -->
+            <header class="main-header flex-column py-3">
+                <div class="top-header w-100 d-flex justify-content-between align-items-center">
+                    <a href="" class="link--yaku logo-text">
+                        <span>P</span><span>r</span><span>o</span><span>p</span><span>e</span><span>r</span><span>t</span><span>y</span>  
+                        <span>M</span><span>i</span><span>s</span><span>r</span>
+                    </a>
+                    <div class="d-flex align-items-center">
+                        <div class="call-to-action-holder mr-3">
+                            <a class="tel-holder glowing" href="tel:++0123 (123) 6719900"><i class="icon-mobile">  </i></a>
+                            <p>01018422892</p>
+                            <a href="mailto:mailaddress@gmail.com"><i class="icon-mail"></i></a>
+                            <p>mailaddress@gmail.com</p>
+                            <a href="#" class="location-btn"><i class="icon-location"></i></a>
+                        </div>
+                        <div class="social-buttons">
+                                <a href="#" class="social-buttons__button social-button social-button--facebook" aria-label="Facebook">
+                                <span class="social-button__inner">
+                                <i class="icon-facebook"></i>
+                                </span>
+                                </a>
+                                <a href="#" class="social-buttons__button social-button social-button--twitter" aria-label="twitter">
+                                <span class="social-button__inner">
+                                <i class="icon-twitter"></i>
+                                </span>
+                                </a>
+                                <a href="#" class="social-buttons__button social-button social-button--instagram" aria-label="instagram">
+                                <span class="social-button__inner">
+                                <i class="icon-gplus"></i>
+                                </span>
+                                </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="w-100 d-flex justify-content-between align-items-center">
+                <a href="" class="logo-text ml-3">
+                    <img src="images/logo.jpeg" width="90px" alt="">
                 </a>
-                <ul>
-                    <li><a href="">home</a></li>
-                    <li><a href="">articles</a></li>
-                    <li><a href="">about</a></li>
-                    <li><a href="projects.html">project</a></li>
-                    <li><a href="">contact us</a></li>
+                <ul class="main-list">
+                    <li><a href="#home">home</a></li>
+                    <li class="hassubs"><a>project</a>
+                        <div class="dropdown-holder">
+                            <ul class="dropdown">
+                                <li class="subs"><a href="projects.html">Cairo</a></li>
+                                <li class="subs"><a href="projects.html">Alex</a></li>
+                                <li class="subs hassubs"><a href="projects.html">Giza</a>
+                                    <div class="dropdown-holder">
+                                        <ul class="dropdown">
+                                            <li class="subs"><a href="projects.html">New Giza</a></li>
+                                            <li class="subs"><a href="projects.html">6 october</a></li>
+                                            <li class="subs"><a href="projects.html">Elshik Zaied</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#Services">Services</a>
+                    </li>
+                    <li><a href="#Partner">Partner</a></li>
+                    <li><a href="#contact-us">contact us</a></li>
                 </ul>
+            </div>
+            
             </header>
-            <div class="main-wrapper">
-                <div class="row">
-                    <div class="col-lg-9">
+            <!-- start slider  -->
+            <div class="slider-wrapper full-width " id="home">
+                <ul class="cb-slideshow">
+                    <li><div class="overlay"></div><span>Image 01</span><div><h3></h3></div></li>
+                    <li><div class="overlay"></div><span>Image 02</span><div><h3></h3></div></li>
+                    <li><div class="overlay"></div><span>Image 03</span><div><h3></h3></div></li>
+                    <li><div class="overlay"></div><span>Image 04</span><div><h3></h3></div></li>
+                    <li><div class="overlay"></div><span>Image 05</span><div><h3></h3></div></li>
+                    <li><div class="overlay"></div><span>Image 06</span><div><h3></h3></div></li>
+                </ul>
+                <div class="arrow-down-holder d-none d-md-flex align-items-center justify-content-center">
+                    <img class="" src="images/green-arrow.svg" alt="arrow down" />
+                </div>
+            </div>
+            <div class="main-wrapper ">
+                <div class="row mx-0">
+                        <div class="filter-icon-holder d-block d-lg-none">
+                                <img src="images/filter.png" alt="">
+                            </div>
+                    <div class="col-lg-9 px-0 pl-40">
+                            <!-- <div class="test">
+                                    <div class="main">
+                                            <ul class="mainnav">
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">About</a></li>
+                                                <li class="hassubs"><a href="#">Services</a>
+                                                    <ul class="dropdown">
+                                                        <li class="subs"><a href="#">Web Development</a></li>
+                                                        <li class="subs"><a href="#">Mobile Apps</a></li>
+                                                        <li class="subs hassubs"><a href="#">Designing</a>
+                                                            <ul class="dropdown">
+                                                                <li class="subs"><a href="#">Web Design</a></li>
+                                                                <li class="subs"><a href="#">Graphic Design</a></li>
+                                                                <li class="subs"><a href="#">Logo Design</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Gallery</a></li>
+                                                <li class="hassubs"><a href="#">Contact</a>
+                                                    <ul class="dropdown">
+                                                        <li class="subs"><a href="#">Email</a></li>
+                                                        <li class="subs hassubs"><a href="#">Address</a>
+                                                            <ul class="dropdown">
+                                                                <li class="subs"><a href="#">Head Office</a></li>
+                                                                <li class="subs"><a href="#">Registered Office</a></li>
+                                                                <li class="subs"><a href="#">Locate us</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="subs"><a href="#">Phone</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <br style="clear: both;">
+                                        </div>
+                        </div> -->
                         <div class="main-content">
                             <div class="send-message-wrapper">  <p> Send us a message</p><i class="icon-mail"></i></div>
                             <div class="meassage-body scale-div">
@@ -52,7 +193,8 @@
                                 </div>
                             </div>
                             <!-- strat slider content -->
-                            <div class="slider-wrapper">
+
+                            <!-- <div class="slider-wrapper"> -->
 
                                 <!-- search with slider 1 not good with slider tow -->
 
@@ -92,11 +234,12 @@
                                         <div class="overlay"></div>
                                         <img src="images/project2.jpg" alt="">
                                 </div>
+                                </div>
                             </div> -->
                             
                         <!-- slider tow option -->
-
-                        <ul class="cb-slideshow">
+                        <!-- <div class="slider-wrapper">
+                            <ul class="cb-slideshow">
                                 <li><span>Image 01</span><div><h3>re·lax·a·tion</h3></div></li>
                                 <li><span>Image 02</span><div><h3>qui·e·tude</h3></div></li>
                                 <li><span>Image 03</span><div><h3>bal·ance</h3></div></li>
@@ -104,11 +247,342 @@
                                 <li><span>Image 05</span><div><h3>com·po·sure</h3></div></li>
                                 <li><span>Image 06</span><div><h3>se·ren·i·ty</h3></div></li>
                             </ul>
+                        </div> -->
 
-                        </div>
+                            <!-- start our projects content -->
+                            <div class="projects-wrapper" id="projects">
+                                    <header class="my-4 px-4">
+                                            <h2 class="primary_text">Our projects </h2>
+                                            <button class="button button--moema Primary_fill">view all</button>
+                                        </header>
+                                        <!-- <div class="control-filter-wrapper px-4">
+                                                <button type="button" class="control Primary_fill" data-filter="all">All</button>
+                                                <button type="button" class="control Primary_fill" data-filter=".cairo">cairo</button>
+                                                <button type="button" class="control Primary_fill" data-filter=".giza">Giza</button>
+                                                <button type="button" class="control Primary_fill" data-filter=".alex">alex</button>
+                                                <button type="button" class="control Primary_fill" data-filter="none">None</button>
+                                            </div> -->
+                                    <div class="project-slider px-4">
+                                            <div class="project-item mix cairo">
+                                                <div class="slider-item">
+                                                    <div class="project-img">
+                                                        <img src="images/project1.jpg" alt="">
+                                                        <div class="icon-holder">
+                                                            <a href="tel:0123456789">
+                                                                call
+                                                                <i class="icon-mobile"></i> 
+                                                            </a>
+                                                            <a class="ask-now-btn">
+                                                                Ask Now
+                                                                <i class="icon-mobile"></i> 
+                                                            </a>
+                                                            <a class="project-link" href="projects.html">
+                                                                preview
+                                                                <i class="ml-1">&#10140</i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="description-holder">
+                                                        <a href="" class="project-header">
+                                                            <h4>Cairo Business Park</h4>
+                                                        </a>
+                                                        <span> New Cairo </span>
+                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                                                        <a href="projects.html">Read More</a> 
+                                                    </div>
+                                                </div>
+                                                <!-- <a class="call-btn" href="tel:+01018422892"></a> -->
+                                            </div>
+                                            <div class="project-item mix giza">
+                                                <div class="slider-item">
+                                                    <div class="project-img">
+                                                        <img src="images/project2.jpg" alt="">
+                                                        <div class="icon-holder">
+                                                            <a href="tel:0123456789">
+                                                                call
+                                                                <i class="icon-mobile"></i> 
+                                                            </a>
+                                                            <a class="ask-now-btn">
+                                                                Ask Now
+                                                                <i class="icon-mobile"></i> 
+                                                            </a>
+                                                            <a class="project-link" href="projects.html">
+                                                                preview
+                                                                <i class="ml-1">&#10140</i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="description-holder">
+                                                        <a href="" class="project-header">
+                                                            <h4>Cairo Business Park</h4>
+                                                        </a>
+                                                        <span> New Cairo </span>
+                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                                                        <a href="projects.html">Read More</a> 
+                                                    </div>
+                                                </div>
+                                                <!-- <a class="call-btn" href="tel:+01018422892"></a> -->
+                                            </div>
+                                            <div class="project-item mix alex">
+                                                <div class="slider-item">
+                                                    <div class="project-img">
+                                                        <img src="images/project3.jpg" alt="">
+                                                        <div class="icon-holder">
+                                                            <a href="tel:0123456789">
+                                                                call
+                                                                <i class="icon-mobile"></i> 
+                                                            </a>
+                                                            <a class="ask-now-btn">
+                                                                Ask Now
+                                                                <i class="icon-mobile"></i> 
+                                                            </a>
+                                                            <a class="project-link" href="projects.html">
+                                                                preview
+                                                                <i class="ml-1">&#10140</i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="description-holder">
+                                                        <a href="" class="project-header">
+                                                            <h4>Cairo Business Park</h4>
+                                                        </a>
+                                                        <span> New Cairo </span>
+                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                                                        <a href="projects.html">Read More</a> 
+                                                    </div>
+                                                </div>
+                                                <!-- <a class="call-btn" href="tel:+01018422892"></a> -->
+                                            </div>
+                                            <div class="project-item mix giza">
+                                                <div class="slider-item">
+                                                    <div class="project-img">
+                                                        <img src="images/project1.jpg" alt="">
+                                                        <div class="icon-holder">
+                                                            <a href="tel:0123456789">
+                                                                call
+                                                                <i class="icon-mobile"></i> 
+                                                            </a>
+                                                            <a class="ask-now-btn">
+                                                                Ask Now
+                                                                <i class="icon-mobile"></i> 
+                                                            </a>
+                                                            <a class="project-link" href="projects.html">
+                                                                preview
+                                                                <i class="ml-1">&#10140</i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="description-holder">
+                                                        <a href="" class="project-header">
+                                                            <h4>Cairo Business Park</h4>
+                                                        </a>
+                                                        <span> New Cairo </span>
+                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                                                        <a href="projects.html">Read More</a> 
+                                                    </div>
+                                                </div>
+                                                <!-- <a class="call-btn" href="tel:+01018422892"></a> -->
+                                            </div>
+                                            <div class="project-item mix cairo">
+                                                <div class="slider-item">
+                                                    <div class="project-img">
+                                                        <img src="images/project2.jpg" alt="">
+                                                        <div class="icon-holder">
+                                                            <a href="tel:0123456789">
+                                                                call
+                                                                <i class="icon-mobile"></i> 
+                                                            </a>
+                                                            <a class="ask-now-btn">
+                                                                Ask Now
+                                                                <i class="icon-mobile"></i> 
+                                                            </a>
+                                                            <a class="project-link" href="projects.html">
+                                                                preview
+                                                                <i class="ml-1">&#10140</i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="description-holder">
+                                                        <a href="" class="project-header">
+                                                            <h4>Cairo Business Park</h4>
+                                                        </a>
+                                                        <span> New Cairo </span>
+                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                                                        <a href="projects.html">Read More</a> 
+                                                    </div>
+                                                </div>
+                                                <!-- <a class="call-btn" href="tel:+01018422892"></a> -->
+                                            </div>
+                                            <div class="project-item mix alex">
+                                                <div class="slider-item">
+                                                    <div class="project-img">
+                                                        <img src="images/project3.jpg" alt="">
+                                                        <div class="icon-holder">
+                                                            <a href="tel:0123456789">
+                                                                call
+                                                                <i class="icon-mobile"></i> 
+                                                            </a>
+                                                            <a class="ask-now-btn">
+                                                                Ask Now
+                                                                <i class="icon-mobile"></i> 
+                                                            </a>
+                                                            <a class="project-link" href="projects.html">
+                                                                preview
+                                                                <i class="ml-1">&#10140</i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="description-holder">
+                                                        <a href="" class="project-header">
+                                                            <h4>Cairo Business Park</h4>
+                                                        </a>
+                                                        <span> New Cairo </span>
+                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                                                        <a href="projects.html">Read More</a> 
+                                                    </div>
+                                                </div>
+                                                <!-- <a class="call-btn" href="tel:+01018422892"></a> -->
+                                            </div>
+                                            <div class="project-item mix alex">
+                                                <div class="slider-item">
+                                                    <div class="project-img">
+                                                        <img src="images/project1.jpg" alt="">
+                                                        <div class="icon-holder">
+                                                            <a href="tel:0123456789">
+                                                                call
+                                                                <i class="icon-mobile"></i> 
+                                                            </a>
+                                                            <a class="ask-now-btn">
+                                                                Ask Now
+                                                                <i class="icon-mobile"></i> 
+                                                            </a>
+                                                            <a class="project-link" href="projects.html">
+                                                                preview
+                                                                <i class="ml-1">&#10140</i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="description-holder">
+                                                        <a href="" class="project-header">
+                                                            <h4>Cairo Business Park</h4>
+                                                        </a>
+                                                        <span> New Cairo </span>
+                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                                                        <a href="projects.html">Read More</a> 
+                                                    </div>
+                                                </div>
+                                                <!-- <a class="call-btn" href="tel:+01018422892"></a> -->
+                                            </div>
+                                            <div class="project-item mix cairo">
+                                                <div class="slider-item">
+                                                    <div class="project-img">
+                                                        <img src="images/project2.jpg" alt="">
+                                                        <div class="icon-holder">
+                                                            <a href="tel:0123456789">
+                                                                call
+                                                                <i class="icon-mobile"></i> 
+                                                            </a>
+                                                            <a class="ask-now-btn">
+                                                                Ask Now
+                                                                <i class="icon-mobile"></i> 
+                                                            </a>
+                                                            <a class="project-link" href="projects.html">
+                                                                preview
+                                                                <i class="ml-1">&#10140</i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="description-holder">
+                                                        <a href="" class="project-header">
+                                                            <h4>Cairo Business Park</h4>
+                                                        </a>
+                                                        <span> New Cairo </span>
+                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                                                        <a href="projects.html">Read More</a> 
+                                                    </div>
+                                                </div>
+                                                <!-- <a class="call-btn" href="tel:+01018422892"></a> -->
+                                            </div>
+                                        </div>
+                            </div>
 
-                            <!-- start our partner content -->
-                            <div class="Partner-wrapper">
+                            <!-- start our services content -->
+                            <div class="services-wrapper" id="Services">
+                                    <header class="my-4 px-4">
+                                            <h2 class="primary_text">About Us</h2>
+                                        </header>
+                                <div class="row m-0">
+                                    <div class="row mx-0 d-flex flex-column-reverse flex-md-row mb-80">
+                                        <div class="col-md-6 about-article wow slideInLeft" data-wow-duration="1s">
+                                            <h2>
+                                                FEW WORDS ABOUT OUR <br />
+                                            <span> EXCLUSIVE SERVICES</span>
+                                            </h2>
+                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful.</p>
+                                        </div>
+                                        <div class="col-md-6 p-0 wow slideInRight" data-wow-duration="1s">
+                                            <img class="w-100 h-100" src="images/deal.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4 mb-5 wow bounceInDown" data-wow-duration="2s">
+                                        <div class="sevice-card p-5">
+                                                <h3>Parking Area</h3>
+                                                <div class="sevice-icon ">
+                                                    <img  class="" src="images/facilites.svg" alt="facilites">
+                                                </div>
+                                                <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quibusdam dolorum aperiam, in inventore </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4 mb-5 wow bounceInDown" data-wow-duration="2s">
+                                        <div class="sevice-card p-5">
+                                                <h3>Smart Home</h3>
+                                                <div class="sevice-icon ">
+                                                    <img  class="" src="images/facilites.svg" alt="facilites">
+                                                </div>
+                                                <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quibusdam dolorum aperiam, in inventore </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4 mb-5 wow bounceInDown" data-wow-duration="2s">
+                                        <div class="sevice-card p-5">
+                                                <h3>Security</h3>
+                                                <div class="sevice-icon ">
+                                                    <img  class="" src="images/facilites.svg" alt="facilites">
+                                                </div>
+                                                <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quibusdam dolorum aperiam, in inventore </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4 mb-5 wow bounceInUp" data-wow-duration="2s">
+                                        <div class="sevice-card p-5">
+                                                <h3>facilities</h3>
+                                                <div class="sevice-icon ">
+                                                    <img  class="" src="images/facilites.svg" alt="facilites">
+                                                </div>
+                                                <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quibusdam dolorum aperiam, in inventore </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4 mb-5 wow bounceInUp" data-wow-duration="2s">
+                                        <div class="sevice-card p-5">
+                                                <h3>facilities</h3>
+                                                <div class="sevice-icon ">
+                                                    <img  class="" src="images/facilites.svg" alt="facilites">
+                                                </div>
+                                                <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quibusdam dolorum aperiam, in inventore </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4 mb-5 wow bounceInUp" data-wow-duration="2s">
+                                        <div class="sevice-card p-5">
+                                                <h3>facilities</h3>
+                                                <div class="sevice-icon ">
+                                                      <img  class="" src="images/facilites.svg" alt="facilites">
+                                                    </div>
+                                                <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quibusdam dolorum aperiam, in inventore </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!-- start our partner content -->
+                             <div class="Partner-wrapper" id="Partner">
                                     <header class="my-4 px-4">
                                         <h2 class="primary_text">Our Partners </h2> 
                                         <p class="primary_text">Trusted by startup and corporate</p>
@@ -134,315 +608,7 @@
                                         </a>
                                     </div>
                             </div>
-
-                            <!-- start our services content -->
-                            <div class="services-wrapper pt-4">
-                                    <header class="my-4 px-4">
-                                            <h2 class="primary_text">About Us</h2>
-                                        </header>
-                                <div class="row m-0">
-                                    <div class="col-12 d-flex mb-80">
-                                        <div class="col-md-6 about-article">
-                                            <h2>
-                                                FEW WORDS ABOUT OUR <br />
-                                            <span> EXCLUSIVE SERVICES</span>
-                                            </h2>
-                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful.</p>
-                                        </div>
-                                        <div class="col-md-6 p-0">
-                                            <img class="w-100 h-100" src="images/deal.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-4 mb-5">
-                                        <div class="sevice-card p-5">
-                                                <h3>Parking Area</h3>
-                                                <div class="sevice-icon ">
-                                                    <img  class="" src="images/facilites.svg" alt="facilites">
-                                                </div>
-                                                <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quibusdam dolorum aperiam, in inventore </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 mb-5">
-                                        <div class="sevice-card p-5">
-                                                <h3>Smart Home</h3>
-                                                <div class="sevice-icon ">
-                                                    <img  class="" src="images/facilites.svg" alt="facilites">
-                                                </div>
-                                                <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quibusdam dolorum aperiam, in inventore </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 mb-5">
-                                        <div class="sevice-card p-5">
-                                                <h3>Security</h3>
-                                                <div class="sevice-icon ">
-                                                    <img  class="" src="images/facilites.svg" alt="facilites">
-                                                </div>
-                                                <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quibusdam dolorum aperiam, in inventore </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 mb-5">
-                                        <div class="sevice-card p-5">
-                                                <h3>facilities</h3>
-                                                <div class="sevice-icon ">
-                                                    <img  class="" src="images/facilites.svg" alt="facilites">
-                                                </div>
-                                                <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quibusdam dolorum aperiam, in inventore </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 mb-5">
-                                        <div class="sevice-card p-5">
-                                                <h3>facilities</h3>
-                                                <div class="sevice-icon ">
-                                                    <img  class="" src="images/facilites.svg" alt="facilites">
-                                                </div>
-                                                <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quibusdam dolorum aperiam, in inventore </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 mb-5">
-                                        <div class="sevice-card p-5">
-                                                <h3>facilities</h3>
-                                                <div class="sevice-icon ">
-                                                      <img  class="" src="images/facilites.svg" alt="facilites">
-                                                    </div>
-                                                <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quibusdam dolorum aperiam, in inventore </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- start our projects content -->
-                            <div class="projects-wrapper">
-                                    <header class="my-4 px-4">
-                                            <h2 class="primary_text">Our projects </h2>
-                                            <button class="button button--moema Primary_fill">view all</button>
-                                        </header>
-                                    <div class="project-slider px-4">
-                                            <div class="project-item">
-                                                <div class="slider-item">
-                                                    <div class="project-img">
-                                                        <img src="images/project1.jpg" alt="">
-                                                        <div class="icon-holder">
-                                                            <a href="tel:0123456789">
-                                                                <i class="icon-mobile"></i> call
-                                                            </a>
-                                                            <a href="projects.html">
-                                                                <i class="icon-mobile"></i>
-                                                                preview
-                                                            </a>
-                                                            <a>
-                                                                <i class="icon-mobile"></i> contact
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="description-holder">
-                                                        <a href="" class="project-header">
-                                                            <h4>Cairo Business Park</h4>
-                                                        </a>
-                                                        <span> New Cairo </span>
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
-                                                        <a href="projects.html">Read More</a> 
-                                                    </div>
-                                                </div>
-                                                <!-- <a class="call-btn" href="tel:+01018422892"></a> -->
-                                            </div>
-                                            <div class="project-item">
-                                                <div class="slider-item">
-                                                    <div class="project-img">
-                                                        <img src="images/project2.jpg" alt="">
-                                                        <div class="icon-holder">
-                                                            <a href="tel:0123456789">
-                                                                <i class="icon-mobile"></i> call
-                                                            </a>
-                                                            <a href="projects.html">
-                                                                <i class="icon-mobile"></i>
-                                                                preview
-                                                            </a>
-                                                            <a>
-                                                                <i class="icon-mobile"></i> contact
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="description-holder">
-                                                        <a href="" class="project-header">
-                                                            <h4>Cairo Business Park</h4>
-                                                        </a>
-                                                        <span> New Cairo </span>
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
-                                                        <a href="projects.html">Read More</a> 
-                                                    </div>
-                                                </div>
-                                                <!-- <a class="call-btn" href="tel:+01018422892"></a> -->
-                                            </div>
-                                            <div class="project-item">
-                                                <div class="slider-item">
-                                                    <div class="project-img">
-                                                        <img src="images/project3.jpg" alt="">
-                                                        <div class="icon-holder">
-                                                            <a href="tel:0123456789">
-                                                                <i class="icon-mobile"></i> call
-                                                            </a>
-                                                            <a href="projects.html">
-                                                                <i class="icon-mobile"></i>
-                                                                preview
-                                                            </a>
-                                                            <a>
-                                                                <i class="icon-mobile"></i> contact
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="description-holder">
-                                                        <a href="" class="project-header">
-                                                            <h4>Cairo Business Park</h4>
-                                                        </a>
-                                                        <span> New Cairo </span>
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
-                                                        <a href="projects.html">Read More</a> 
-                                                    </div>
-                                                </div>
-                                                <!-- <a class="call-btn" href="tel:+01018422892"></a> -->
-                                            </div>
-                                            <div class="project-item">
-                                                <div class="slider-item">
-                                                    <div class="project-img">
-                                                        <img src="images/project1.jpg" alt="">
-                                                        <div class="icon-holder">
-                                                            <a href="tel:0123456789">
-                                                                <i class="icon-mobile"></i> call
-                                                            </a>
-                                                            <a href="projects.html">
-                                                                <i class="icon-mobile"></i>
-                                                                preview
-                                                            </a>
-                                                            <a>
-                                                                <i class="icon-mobile"></i> contact
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="description-holder">
-                                                        <a href="" class="project-header">
-                                                            <h4>Cairo Business Park</h4>
-                                                        </a>
-                                                        <span> New Cairo </span>
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
-                                                        <a href="projects.html">Read More</a> 
-                                                    </div>
-                                                </div>
-                                                <!-- <a class="call-btn" href="tel:+01018422892"></a> -->
-                                            </div>
-                                            <div class="project-item">
-                                                <div class="slider-item">
-                                                    <div class="project-img">
-                                                        <img src="images/project2.jpg" alt="">
-                                                        <div class="icon-holder">
-                                                            <a href="tel:0123456789">
-                                                                <i class="icon-mobile"></i> call
-                                                            </a>
-                                                            <a href="projects.html">
-                                                                <i class="icon-mobile"></i>
-                                                                preview
-                                                            </a>
-                                                            <a>
-                                                                <i class="icon-mobile"></i> contact
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="description-holder">
-                                                        <a href="" class="project-header">
-                                                            <h4>Cairo Business Park</h4>
-                                                        </a>
-                                                        <span> New Cairo </span>
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
-                                                        <a href="projects.html">Read More</a> 
-                                                    </div>
-                                                </div>
-                                                <!-- <a class="call-btn" href="tel:+01018422892"></a> -->
-                                            </div>
-                                            <div class="project-item">
-                                                <div class="slider-item">
-                                                    <div class="project-img">
-                                                        <img src="images/project3.jpg" alt="">
-                                                        <div class="icon-holder">
-                                                            <a href="tel:0123456789">
-                                                                <i class="icon-mobile"></i> call
-                                                            </a>
-                                                            <a href="projects.html">
-                                                                <i class="icon-mobile"></i>
-                                                                preview
-                                                            </a>
-                                                            <a>
-                                                                <i class="icon-mobile"></i> contact
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="description-holder">
-                                                        <a href="" class="project-header">
-                                                            <h4>Cairo Business Park</h4>
-                                                        </a>
-                                                        <span> New Cairo </span>
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
-                                                        <a href="projects.html">Read More</a> 
-                                                    </div>
-                                                </div>
-                                                <!-- <a class="call-btn" href="tel:+01018422892"></a> -->
-                                            </div>
-                                            <div class="project-item">
-                                                <div class="slider-item">
-                                                    <div class="project-img">
-                                                        <img src="images/project1.jpg" alt="">
-                                                        <div class="icon-holder">
-                                                            <a href="tel:0123456789">
-                                                                <i class="icon-mobile"></i> call
-                                                            </a>
-                                                            <a href="projects.html">
-                                                                <i class="icon-mobile"></i>
-                                                                preview
-                                                            </a>
-                                                            <a>
-                                                                <i class="icon-mobile"></i> contact
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="description-holder">
-                                                        <a href="" class="project-header">
-                                                            <h4>Cairo Business Park</h4>
-                                                        </a>
-                                                        <span> New Cairo </span>
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
-                                                        <a href="projects.html">Read More</a> 
-                                                    </div>
-                                                </div>
-                                                <!-- <a class="call-btn" href="tel:+01018422892"></a> -->
-                                            </div>
-                                            <div class="project-item">
-                                                <div class="slider-item">
-                                                    <div class="project-img">
-                                                        <img src="images/project2.jpg" alt="">
-                                                        <div class="icon-holder">
-                                                            <a href="tel:0123456789">
-                                                                <i class="icon-mobile"></i> call
-                                                            </a>
-                                                            <a href="projects.html">
-                                                                <i class="icon-mobile"></i>
-                                                                preview
-                                                            </a>
-                                                            <a>
-                                                                <i class="icon-mobile"></i> contact
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="description-holder">
-                                                        <a href="" class="project-header">
-                                                            <h4>Cairo Business Park</h4>
-                                                        </a>
-                                                        <span> New Cairo </span>
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
-                                                        <a href="projects.html">Read More</a> 
-                                                    </div>
-                                                </div>
-                                                <!-- <a class="call-btn" href="tel:+01018422892"></a> -->
-                                            </div>
-                                        </div>
-                            </div>
+                            
 
                             <!-- start contact us content -->
                             <!-- <div class="contact-wrapper">
@@ -501,68 +667,11 @@
                                     </div>
                                 </div>
                             </div> -->
-                            <div class="contact-wrapper-demo-2  p-relative">
-                                    <div class="overlay"></div>
-                                    <header class="mb-5">
-                                            <h2 class="primary_text text-center">Contact Us</h2>
-                                        </header>
-                                        <div class="contact-content">
-                                               
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                        <form action="" class="text-center d-flex flex-column">
-                                                                    <input type="text" id="name" placeholder="name">
-                                                                    
-                                                                    <input type="email" id="mail" placeholder="Email">
-                                                                    
-                                                                    <input type="tel" id="phone" placeholder="Your phone">
-
-                                                                    <input type="text" id="subject" placeholder="Subject">
-
-                                                                    <textarea name="message" id="message" rows="10" placeholder="Enter yor message"></textarea>
-
-                                                                <button class="button button--moema Primary_fill">Submit</button>
-                                                            </form>
-                                                </div>
-                                                <div class="col-md-6">
-                                                        <div class="contact-detailes">
-                                                                
-                                                            <div class="contact-info d-flex flex-column">
-                                                                <a href="mailto:mailaddress@gmail.com"><i class="icon-mail"></i> mailaddress@gmail.com</a>
-                                                                <a href="tel:++0123 (123) 6719900"><i class="icon-mobile"></i> +0123 (123) 6719900</a>
-                                                                <a href="tel:0123456789"><i class="icon-mobile"></i> +0123456789</a>
-                                                                <a><i class="icon-location"></i> 99, Big Building, Glasgow, United Kingdom.</a>
-                                                                
-                                                            </div>
-                                                            <div class="social-buttons mt-2">
-                                                                    <a href="#" class="social-buttons__button social-button social-button--facebook" aria-label="Facebook">
-                                                                      <span class="social-button__inner">
-                                                                       <i class="icon-facebook"></i>
-                                                                      </span>
-                                                                    </a>
-                                                                    <a href="#" class="social-buttons__button social-button social-button--twitter" aria-label="twitter">
-                                                                      <span class="social-button__inner">
-                                                                       <i class="icon-twitter"></i>
-                                                                      </span>
-                                                                    </a>
-                                                                    <a href="#" class="social-buttons__button social-button social-button--instagram" aria-label="instagram">
-                                                                      <span class="social-button__inner">
-                                                                       <i class="icon-gplus"></i>
-                                                                      </span>
-                                                                    </a>
-                                                                  </div>
-                                                        </div>
-                                                </div>
-                                            </div>
-                                                
-                                        </div>
-                            </div>
+                            
                         </div>
                     </div>
-                    <div class="filter-icon-holder d-block d-lg-none">
-                        <img src="images/filter.png" alt="">
-                    </div>
-                    <div class="col-lg-3 filter-wrapper d-none d-lg-block">
+                    
+                    <div class="col-lg-3 px-0 filter-wrapper d-none d-lg-block">
                         <div class="filter-content">
                             <h4 class="pb-3">Search Filteration</h4>
                             <div class="dropdown-wrapper">
@@ -595,11 +704,11 @@
                                 <div class="range-inputs-holder mb-20">
                                     <div class="num-input-holder">
                                         <label for="">From</label>
-                                        <input type="number" name="" id="">
+                                        <input type="number" name="" id="priceFrom">
                                     </div>
                                     <div class="num-input-holder">
                                         <label for="">To</label>
-                                        <input type="number" name="" id="">
+                                        <input type="number" name="" id="priceTo">
                                     </div>
                                 </div>
 
@@ -610,11 +719,11 @@
                                 <div class="range-inputs-holder mb-20">
                                     <div class="num-input-holder">
                                         <label for="">From</label>
-                                        <input type="number" name="" id="">
+                                        <input type="number" name="" id="sizeFrom">
                                     </div>
                                     <div class="num-input-holder">
                                         <label for="">To</label>
-                                        <input type="number" name="" id="">
+                                        <input type="number" name="" id="sizeTo">
                                     </div>
                                 </div>
                                 <div class="text-center mt-4">
@@ -622,13 +731,69 @@
                                 </div>
                         </div>
                     </div>
-                    <div class="col-12 pt-4">
+                    <div class="contact-wrapper-demo-2 col-12 pl-40 p-relative" id="contact-us">
+                            <div class="overlay"></div>
+                            <header class="mb-5">
+                                    <h2 class="primary_text text-center">Contact Us</h2>
+                                </header>
+                                <div class="contact-content">
+                                       
+                                    <div class="row">
+                                        <div class="col-md-6 wow slideInLeft" data-wow-duration="1s">
+                                                <form action="" class="text-center d-flex flex-column">
+                                                            <input type="text" id="name" placeholder="name">
+                                                            
+                                                            <input type="email" id="mail" placeholder="Email">
+                                                            
+                                                            <input type="tel" id="phone" placeholder="Your phone">
+
+                                                            <input type="text" id="subject" placeholder="Subject">
+
+                                                            <textarea name="message" id="message" rows="10" placeholder="Enter yor message"></textarea>
+
+                                                        <button class="button button--moema Primary_fill">Submit</button>
+                                                    </form>
+                                        </div>
+                                        <div class="col-md-6 wow lightSpeedIn" data-wow-duration="1s">
+                                                <div class="contact-detailes">
+                                                        
+                                                    <div class="contact-info d-flex flex-column">
+                                                        <a href="mailto:mailaddress@gmail.com"><i class="icon-mail"></i> mailaddress@gmail.com</a>
+                                                        <a href="tel:++0123 (123) 6719900"><i class="icon-mobile"></i> +0123 (123) 6719900</a>
+                                                        <a href="tel:0123456789"><i class="icon-mobile"></i> +0123456789</a>
+                                                        <a><i class="icon-location"></i> 99, Big Building, Glasgow, United Kingdom.</a>
+                                                        
+                                                    </div>
+                                                    <div class="social-buttons mt-2">
+                                                            <a href="#" class="social-buttons__button social-button social-button--facebook" aria-label="Facebook">
+                                                              <span class="social-button__inner">
+                                                               <i class="icon-facebook"></i>
+                                                              </span>
+                                                            </a>
+                                                            <a href="#" class="social-buttons__button social-button social-button--twitter" aria-label="twitter">
+                                                              <span class="social-button__inner">
+                                                               <i class="icon-twitter"></i>
+                                                              </span>
+                                                            </a>
+                                                            <a href="#" class="social-buttons__button social-button social-button--instagram" aria-label="instagram">
+                                                              <span class="social-button__inner">
+                                                               <i class="icon-gplus"></i>
+                                                              </span>
+                                                            </a>
+                                                          </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                        
+                                </div>
+                    </div>
+                    <div class="col-12 px-0">
                             <!-- <div class="col-md-8" id="googleMap" style="width:100%;height:400px;"></div> -->
                             <iframe
                             src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319"
-                            width="100%" height="400px" frameborder="0" style="border:0"></iframe>
+                            width="100%" height="500px" frameborder="0" style="border:0"></iframe>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 px-0">
                         <footer class="main-footer">
                                 <p>Copyright ©2019 All Rights Reserved</p>
                         </footer>
@@ -644,7 +809,107 @@
     <script src="js/bootstrap-slider.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/selectFx.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
     <script>
+
+// $(window).load(function() {
+//     $(".se-pre-con").fadeOut("slow");
+// 	});
+
+        $( document ).ready(function() {
+            // var containerEl = document.querySelector('.project-slider');
+		    // var mixer = mixitup(containerEl);
+
+            /* arrow down works section */
+            $(".arrow-down-holder").click(function () {
+                $(this).css('animationPlayState' , 'paused');
+                $('html, body').animate({
+                    scrollTop: $("#projects").offset().top -130
+                }, 1000);
+            });
+
+            var goToSection = localStorage.getItem("targetSectionLocal");
+    
+            switch (goToSection) {
+                case null:
+                    goToSection = "#home"
+                    break;
+            }
+
+            $('html, body').animate({
+                scrollTop: $(goToSection).offset().top - 90
+            }, 1000, () => localStorage.clear());
+
+            
+            var TempTargetSection = "";
+            $('.main-list > li:not(.hassubs) a').click(function(e){
+                e.preventDefault();
+                var targetSection = $(this).attr("href");
+                console.log(targetSection);
+                if (TempTargetSection !== targetSection) {
+                $('html, body').animate({
+                    scrollTop: $(targetSection).offset().top -90
+                }, 1000);
+                TempTargetSection = targetSection;
+                }
+            });
+
+            $('.location-btn').click(function(){
+                $('html, body').animate({scrollTop:$(document).height()}, 2000);
+                return false;
+            });
+
+            let isPopupOpen = false;
+             /*show popup*/
+            $('.ask-now-btn').click(function(){
+                $('.ask-form-popup').fadeIn("slow");
+                isPopupOpen = true;
+            });
+
+             /*close popup*/
+             $(document).click(function (e) {
+                 if(isPopupOpen){
+                    if ($(e.target).attr('class') == "ask-form-popup") {
+                        isPopupOpen = false;
+                        $(".ask-form-popup").fadeOut("slow");
+                    }
+                 }
+            if(isPopupOpen){
+                $(document).scroll(function() {
+                    isPopupOpen = false;
+                    $(".ask-form-popup").fadeOut("slow");
+                });
+            }
+            });
+
+            new WOW().init();
+                var contactOffsetTop =  $('.contact-wrapper-demo-2').offset().top;
+                var filterHeight = $('.filter-wrapper').height();
+                let clientScreen = $(window).height();
+            $(document).scroll(function() {
+                var scroll = $(document).scrollTop();
+                if (scroll >= clientScreen - 80) {
+                    $('.main-header').addClass('has-bg');
+                }else{
+                    $('.main-header').removeClass('has-bg');
+                }
+            });
+
+            if($(window).width() >= 768){
+                $(document).scroll(function() {
+                var scroll = $(document).scrollTop();
+                var stopMenuScrollPoint = contactOffsetTop - filterHeight - 70;
+                
+                if(scroll >= stopMenuScrollPoint){
+                    $('.filter-wrapper').addClass('stop-fixed');
+                }else{
+                    $('.filter-wrapper').removeClass('stop-fixed');
+                }
+            });
+                } 
+        });
+
         $('.send-message-wrapper, .close-btn').click(function(){
             $('.meassage-body, .send-message-wrapper').toggleClass('scale-div');
         });
@@ -658,16 +923,45 @@
 				} );
 			})();
 
-           var priceRangeSlider = $(".price-range").slider({ min: 0, max: 180000, value: [0, 50000]});
-           var sizeRangeSlider = $(".size-range").slider({ min: 0, max: 400, value: [0, 180], tooltip: 'always'});
+           var priceRangeSlider = $(".price-range").slider({ min: 0, max: 100000, value: [0, 50000]});
+           var sizeRangeSlider = $(".size-range").slider({ min: 0, max: 400, value: [0, 180]});
 
-            $(".end-range-num").slider();
+            $(".price-range").on("slide", function(slideEvt) {
+                $('#priceFrom').val(slideEvt.value[0]);
+                $('#priceTo').val(slideEvt.value[1]);
+            });
+            $(".size-range").on("slide", function(slideEvt) {
+                $('#sizeFrom').val(slideEvt.value[0]);
+                $('#sizeTo').val(slideEvt.value[1]);
+            });
+            $('#priceFrom').keyup(function(){
+                console.log($(this).val()); 
+                $(this).val(); 
+            });
+            console.log(priceRangeSlider);
+
         $('.pratner-slider').slick({
             slidesToShow: 3,
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,
             arrows : false,
+            responsive: [
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                    },
+                    {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                    }
+                ]
         });
         $('.project-slider').slick({
             slidesToShow: 3,
@@ -675,7 +969,23 @@
             autoplay: true,
             autoplaySpeed: 2000,
             arrows : true,
-            dots: true
+            dots: true,
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+                },
+                {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+                }
+            ]
         });
         $('.slider-content').slick({
             // dots: true,
