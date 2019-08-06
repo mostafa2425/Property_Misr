@@ -37,6 +37,13 @@ header {
             }
         }
 
+        &.no-social{
+            min-height: 80px !important;
+            justify-content: center !important;
+            .top-header{
+                display: none !important;
+            }
+        }
         
         .top-header{
             .call-to-action-holder{

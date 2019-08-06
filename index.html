@@ -13,7 +13,7 @@
     <title>home</title>
     <style>
         .se-pre-con {
-            display: none;
+            /* display: none; */
 	position: fixed;
 	left: 0px;
 	top: 0px;
@@ -813,9 +813,9 @@
     <script src="js/mixitup.min.js"></script>
     <script>
 
-// $(window).load(function() {
-//     $(".se-pre-con").fadeOut("slow");
-// 	});
+$(window).load(function() {
+    $(".se-pre-con").fadeOut("slow");
+	});
 
         $( document ).ready(function() {
             // var containerEl = document.querySelector('.project-slider');
@@ -890,9 +890,9 @@
             $(document).scroll(function() {
                 var scroll = $(document).scrollTop();
                 if (scroll >= clientScreen - 80) {
-                    $('.main-header').addClass('has-bg');
+                    $('.main-header').addClass('has-bg no-social');
                 }else{
-                    $('.main-header').removeClass('has-bg');
+                    $('.main-header').removeClass('has-bg no-social');
                 }
             });
 

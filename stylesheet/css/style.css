@@ -20,7 +20,7 @@
   src: url(../fonts/icomoon.ttf);
 }
 
-header.main-header, header.main-header .top-header .call-to-action-holder a, .root .main-wrapper .main-content .services-wrapper header, .root .main-wrapper .main-content .services-wrapper .sevice-card .sevice-icon, .root .main-wrapper .main-content .Partner-wrapper header {
+header.main-header, header.main-header .top-header .call-to-action-holder a, .root .main-wrapper .main-content .services-wrapper header, .root .main-wrapper .main-content .services-wrapper .sevice-card .sevice-icon, .root .main-wrapper .main-content .Partner-wrapper header, .project-page-wrapper .project-card-wrapper .ask-now-pluse-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1165,11 +1165,9 @@ p {
 
 .ask-form-popup form input,
 .ask-form-popup form textarea {
-  background-color: transparent;
   border-radius: 4px !important;
-  -webkit-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
-          box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
-  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  border: none;
   height: 50px;
   border-radius: 0;
   -webkit-box-shadow: none;
@@ -1190,22 +1188,22 @@ p {
 
 .ask-form-popup form input:-moz-placeholder,
 .ask-form-popup form textarea:-moz-placeholder {
-  color: #697582;
+  color: #55595c;
 }
 
 .ask-form-popup form input::-moz-placeholder,
 .ask-form-popup form textarea::-moz-placeholder {
-  color: #697582;
+  color: #55595c;
 }
 
 .ask-form-popup form input:-ms-input-placeholder,
 .ask-form-popup form textarea:-ms-input-placeholder {
-  color: #697582;
+  color: #55595c;
 }
 
 .ask-form-popup form input::-webkit-input-placeholder,
 .ask-form-popup form textarea::-webkit-input-placeholder {
-  color: #697582;
+  color: #55595c;
 }
 
 .ask-form-popup form textarea {
@@ -2430,6 +2428,17 @@ header.main-header.has-bg .main-list > .hassubs > a {
   color: #FFF !important;
 }
 
+header.main-header.no-social {
+  min-height: 80px !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+header.main-header.no-social .top-header {
+  display: none !important;
+}
+
 header.main-header .top-header .call-to-action-holder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3605,7 +3614,7 @@ header.main-header .main-list > li.hassubs:hover > a {
   position: sticky !important;
 }
 
-.project-page-wrapper .project-detailes-wrapper {
+.project-page-wrapper .project-detailes-wrapper .detailes-holder {
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 4px;
@@ -3613,6 +3622,8 @@ header.main-header .main-list > li.hassubs:hover > a {
   -webkit-box-shadow: 0 0 7.3px 1.7px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 7.3px 1.7px rgba(0, 0, 0, 0.1);
   color: #676767;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .project-page-wrapper .project-detailes-wrapper .detailes-holder > div {
@@ -3626,6 +3637,69 @@ header.main-header .main-list > li.hassubs:hover > a {
   font-weight: 600;
   border-bottom: 1px solid #DDD;
   color: #3b393d;
+}
+
+.project-page-wrapper .project-detailes-wrapper .ask-about-project-form {
+  border-radius: 4px;
+  background: #fff;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 7.3px 1.7px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 7.3px 1.7px rgba(0, 0, 0, 0.1);
+}
+
+.project-page-wrapper .project-detailes-wrapper .ask-about-project-form h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #987454;
+  padding-bottom: 35px;
+}
+
+.project-page-wrapper .project-detailes-wrapper .ask-about-project-form input,
+.project-page-wrapper .project-detailes-wrapper .ask-about-project-form textarea {
+  border-radius: 4px !important;
+  background-color: #f1f1f1;
+  border: 0;
+  height: 50px;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 20px;
+  text-indent: 10px;
+  cursor: default;
+  width: 100%;
+}
+
+.project-page-wrapper .project-detailes-wrapper .ask-about-project-form input:focus,
+.project-page-wrapper .project-detailes-wrapper .ask-about-project-form textarea:focus {
+  border-color: #987454;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(152, 116, 84, 0.6) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(152, 116, 84, 0.6) !important;
+  outline: none;
+}
+
+.project-page-wrapper .project-detailes-wrapper .ask-about-project-form input:-moz-placeholder,
+.project-page-wrapper .project-detailes-wrapper .ask-about-project-form textarea:-moz-placeholder {
+  color: #55595c;
+}
+
+.project-page-wrapper .project-detailes-wrapper .ask-about-project-form input::-moz-placeholder,
+.project-page-wrapper .project-detailes-wrapper .ask-about-project-form textarea::-moz-placeholder {
+  color: #55595c;
+}
+
+.project-page-wrapper .project-detailes-wrapper .ask-about-project-form input:-ms-input-placeholder,
+.project-page-wrapper .project-detailes-wrapper .ask-about-project-form textarea:-ms-input-placeholder {
+  color: #55595c;
+}
+
+.project-page-wrapper .project-detailes-wrapper .ask-about-project-form input::-webkit-input-placeholder,
+.project-page-wrapper .project-detailes-wrapper .ask-about-project-form textarea::-webkit-input-placeholder {
+  color: #55595c;
+}
+
+.project-page-wrapper .project-detailes-wrapper .ask-about-project-form textarea {
+  padding-top: 20px;
+  height: auto;
 }
 
 .project-page-wrapper .project-card-wrapper .card .card__container .card__image {
@@ -3671,6 +3745,10 @@ header.main-header .main-list > li.hassubs:hover > a {
   display: block;
 }
 
+.project-page-wrapper .project-card-wrapper .card .card__container.card__container--closed .ask-now-pluse-btn {
+  display: none;
+}
+
 .project-page-wrapper .project-card-wrapper .card .card__container.card__container--closed ~ .icon-holder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3714,4 +3792,91 @@ header.main-header .main-list > li.hassubs:hover > a {
 
 .project-page-wrapper .project-card-wrapper .card .icon-holder a:hover {
   color: #987454;
+}
+
+.project-page-wrapper .project-card-wrapper .ask-now-pluse-btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 65vh;
+  right: 40px;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  color: #FFF;
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
+  -webkit-animation: shadow-pulse 1.5s infinite;
+          animation: shadow-pulse 1.5s infinite;
+}
+
+.project-page-wrapper .project-card-wrapper .ask-now-pluse-btn:hover {
+  color: #987454;
+  background-color: #FFF;
+}
+
+@-webkit-keyframes shadow-pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0px rgba(152, 116, 84, 0.1);
+            box-shadow: 0 0 0 0px rgba(152, 116, 84, 0.1);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 25px rgba(152, 116, 84, 0.5);
+            box-shadow: 0 0 0 25px rgba(152, 116, 84, 0.5);
+  }
+}
+
+@keyframes shadow-pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0px rgba(152, 116, 84, 0.1);
+            box-shadow: 0 0 0 0px rgba(152, 116, 84, 0.1);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 25px rgba(152, 116, 84, 0.5);
+            box-shadow: 0 0 0 25px rgba(152, 116, 84, 0.5);
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
 }
