@@ -245,6 +245,10 @@
                             height: 4px;
                             left: 0;
                             background-color: $primary_color;
+                            body.rtl &{
+                                right: 0;
+                                left: auto;
+                            }                            
                         }
                     }
                 }
@@ -252,6 +256,9 @@
                 .project-slider {
                     margin: 40px;
                     margin-top: 0;
+                    body.rtl &{
+                        
+                    }                    
                 }
 
                 .project-item {
@@ -430,6 +437,10 @@
                     bottom: 0;
                     right: 0;
                 }
+            }
+            body.rtl &{
+                right: auto;
+                left: 0;
             }
             @include mq("ipad") {  // width 992
                 position: fixed !important;

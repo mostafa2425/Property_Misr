@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="stylesheet/bootstrtp/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet/bootstrtp/bootstrap-rtl.min.css" disabled>
     <link rel="stylesheet" href="stylesheet/slick/slick/slick-theme.css">
     <link rel="stylesheet" href="stylesheet/slick/slick/slick.css">
     <link rel="stylesheet" href="stylesheet/css/animate.css">
@@ -83,6 +84,7 @@
                                 </span>
                                 </a>
                         </div>
+                        <button class="lang-btn">ع</button>
                     </div>
 
                 </div>
@@ -818,9 +820,28 @@ $(window).load(function() {
 	});
 
         $( document ).ready(function() {
+            let isRtl = false;
+            $('.lang-btn').click(function(){
+                if(!isRtl){
+                    $('link[href="stylesheet/bootstrtp/bootstrap.min.css"]').prop('disabled', true);
+                    $('link[href="stylesheet/bootstrtp/bootstrap-rtl.min.css"]').prop('disabled', false);
+                    $('body').css("direction","rtl").addClass('rtl');
+                    $(this).text('E');
+                    isRtl = true;
+                }else{
+                    $('link[href="stylesheet/bootstrtp/bootstrap.min.css"]').prop('disabled', false);
+                    $('link[href="stylesheet/bootstrtp/bootstrap-rtl.min.css"]').prop('disabled', true);
+                    $('body').css("direction","ltr").removeClass('rtl');
+                    $(this).text('ع');
+                    isRtl = false;
+                }
+            });
             // var containerEl = document.querySelector('.project-slider');
 		    // var mixer = mixitup(containerEl);
 
+            $(".lang-btn").click(function () {
+
+            });
             /* arrow down works section */
             $(".arrow-down-holder").click(function () {
                 $(this).css('animationPlayState' , 'paused');
@@ -946,6 +967,7 @@ $(window).load(function() {
             autoplay: true,
             autoplaySpeed: 2000,
             arrows : false,
+            rtl: true,
             responsive: [
                     {
                     breakpoint: 768,
@@ -970,6 +992,7 @@ $(window).load(function() {
             autoplaySpeed: 2000,
             arrows : true,
             dots: true,
+            // rtl: true,
             responsive: [
                 {
                 breakpoint: 768,

@@ -360,6 +360,12 @@
 	overflow: hidden;
 	border-top-left-radius: 30px;
 	transition: all 0.7s;
+	body.rtl &{
+		right: -91px;
+		left: auto;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 30px;
+	}
 	&::after{
 		content: '';
 		position: absolute;
@@ -369,6 +375,9 @@
 		background: $secondary_color;
 		width: 60px;
 		border-radius: 30px;
+		body.rtl &{
+			top: 10px;
+		}		
 	}
 	p{
 		display: flex;
@@ -378,6 +387,9 @@
 	}
 	i{
 		margin-left: 8px;
+		body.rtl &{
+			margin-right: 8px;
+		}		
 	}
 }
 
@@ -413,6 +425,10 @@
 		overflow: hidden;
 		border-top-right-radius: 30px; 
 		border-top-left-radius: 6px; 
+		body.rtl &{
+			border-top-left-radius: 30px; 
+			border-top-right-radius: 6px; 
+		}		
 		&::after{
 			content: '';
 			position: absolute;
@@ -422,7 +438,10 @@
 			background: $secondary_color;
 			width: 60px;
 			border-radius: 30px;
-			
+			body.rtl &{
+				left: -25px;
+				right: auto;
+			}			
 		}
 	}
 	form{
@@ -456,4 +475,8 @@
 			height: auto;
 		}  
 	}
+	body.rtl &{
+		right: 0;
+		left: auto;
+	}	
 }

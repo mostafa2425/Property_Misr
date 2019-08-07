@@ -1,11 +1,11 @@
 /*other colors*/
 @font-face {
-  font-family: cairo;
+  font-family: "cairo";
   src: url(../fonts/Cairo/Cairo-Regular.ttf);
 }
 
 @font-face {
-  font-family: cairo;
+  font-family: "cairo";
   font-weight: bold;
   src: url(../fonts/Cairo/Cairo-Bold.ttf);
 }
@@ -20,7 +20,7 @@
   src: url(../fonts/icomoon.ttf);
 }
 
-header.main-header, header.main-header .top-header .call-to-action-holder a, .root .main-wrapper .main-content .services-wrapper header, .root .main-wrapper .main-content .services-wrapper .sevice-card .sevice-icon, .root .main-wrapper .main-content .Partner-wrapper header, .project-page-wrapper .project-card-wrapper .ask-now-pluse-btn {
+header.main-header, header.main-header .lang-btn, header.main-header .top-header .call-to-action-holder a, .root .main-wrapper .main-content .services-wrapper header, .root .main-wrapper .main-content .services-wrapper .sevice-card .sevice-icon, .root .main-wrapper .main-content .Partner-wrapper header, .project-page-wrapper .project-card-wrapper .ask-now-pluse-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,7 +297,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: middle;
-  font-family: Myriad Pro;
+  font-family: cairo;
 }
 
 button:focus {
@@ -798,6 +798,13 @@ p {
   transition: all 0.7s;
 }
 
+body.rtl .send-message-wrapper {
+  right: -91px;
+  left: auto;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 30px;
+}
+
 .send-message-wrapper::after {
   content: '';
   position: absolute;
@@ -807,6 +814,10 @@ p {
   background: #549873;
   width: 60px;
   border-radius: 30px;
+}
+
+body.rtl .send-message-wrapper::after {
+  top: 10px;
 }
 
 .send-message-wrapper p {
@@ -823,6 +834,10 @@ p {
 
 .send-message-wrapper i {
   margin-left: 8px;
+}
+
+body.rtl .send-message-wrapper i {
+  margin-right: 8px;
 }
 
 .meassage-body {
@@ -875,6 +890,11 @@ p {
   border-top-left-radius: 6px;
 }
 
+body.rtl .meassage-body header {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 6px;
+}
+
 .meassage-body header::after {
   content: '';
   position: absolute;
@@ -884,6 +904,11 @@ p {
   background: #549873;
   width: 60px;
   border-radius: 30px;
+}
+
+body.rtl .meassage-body header::after {
+  left: -25px;
+  right: auto;
 }
 
 .meassage-body form {
@@ -945,6 +970,11 @@ p {
 .meassage-body form textarea {
   padding-top: 20px;
   height: auto;
+}
+
+body.rtl .meassage-body {
+  right: 0;
+  left: auto;
 }
 
 /* Yaku */
@@ -2415,6 +2445,11 @@ header.main-header.has-bg .call-to-action-holder p {
   color: #FFF;
 }
 
+header.main-header.has-bg .lang-btn {
+  background-color: #FFF;
+  color: #987454;
+}
+
 header.main-header.has-bg .main-list > li:not(.hassubs)::after {
   background-color: #FFF !important;
 }
@@ -2437,6 +2472,17 @@ header.main-header.no-social {
 
 header.main-header.no-social .top-header {
   display: none !important;
+}
+
+header.main-header .lang-btn {
+  width: 30px;
+  height: 30px;
+  background: #987454;
+  color: #FFF;
+  font-weight: bold;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 15px;
 }
 
 header.main-header .top-header .call-to-action-holder {
@@ -3050,6 +3096,11 @@ header.main-header .main-list > li.hassubs:hover > a {
   background-color: #987454;
 }
 
+body.rtl .root .main-wrapper .main-content .projects-wrapper header h2::after {
+  right: 0;
+  left: auto;
+}
+
 .root .main-wrapper .main-content .projects-wrapper .project-slider {
   margin: 40px;
   margin-top: 0;
@@ -3257,6 +3308,11 @@ header.main-header .main-list > li.hassubs:hover > a {
   top: auto;
   bottom: 0;
   right: 0;
+}
+
+body.rtl .root .main-wrapper .filter-wrapper {
+  right: auto;
+  left: 0;
 }
 
 @media only screen and (max-width: 991px) {
@@ -3593,7 +3649,8 @@ header.main-header .main-list > li.hassubs:hover > a {
 }
 
 .project-page-wrapper .control-filter-wrapper {
-  margin-bottom: 40px;
+  position: absolute;
+  top: 170px;
 }
 
 .project-page-wrapper::-webkit-scrollbar {

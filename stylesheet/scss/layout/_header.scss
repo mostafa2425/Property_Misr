@@ -19,6 +19,10 @@ header {
             .call-to-action-holder p{
                 color : #FFF;
             }
+            .lang-btn{
+                background-color: #FFF;
+                color: $primary_color;
+            }
             .main-list{
                 &>li:not(.hassubs){
                     &::after {
@@ -44,7 +48,17 @@ header {
                 display: none !important;
             }
         }
-        
+        .lang-btn{
+            @extend  %flexCenter;
+            width: 30px;
+            height: 30px;
+            background: $primary_color;
+            color: #FFF;
+            font-weight: bold;
+            border-radius: 50%;
+            font-size: 18px;
+            line-height: 15px;
+        }
         .top-header{
             .call-to-action-holder{
                 display: flex;
