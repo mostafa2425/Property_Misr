@@ -821,19 +821,44 @@ $(window).load(function() {
 
         $( document ).ready(function() {
             let isRtl = false;
-            $('.lang-btn').click(function(){
-                if(!isRtl){
+            var langSelected =  localStorage.getItem("lang");
+            function arStyle (){
+                    console.log('ar')
                     $('link[href="stylesheet/bootstrtp/bootstrap.min.css"]').prop('disabled', true);
                     $('link[href="stylesheet/bootstrtp/bootstrap-rtl.min.css"]').prop('disabled', false);
                     $('body').css("direction","rtl").addClass('rtl');
-                    $(this).text('E');
-                    isRtl = true;
-                }else{
+                    $('.lang-btn').text('E');
+                    localStorage.setItem("lang","AR");
+                    isRtl = false;
+            }
+            function enStyle (){
+                    console.log('en')
                     $('link[href="stylesheet/bootstrtp/bootstrap.min.css"]').prop('disabled', false);
                     $('link[href="stylesheet/bootstrtp/bootstrap-rtl.min.css"]').prop('disabled', true);
                     $('body').css("direction","ltr").removeClass('rtl');
-                    $(this).text('ع');
-                    isRtl = false;
+                    $('.lang-btn').text('ع');
+                    localStorage.setItem("lang","EN");
+                    isRtl = true;
+            }
+
+            if(langSelected == null){
+                console.log('null')
+                let isRtl = false;
+                localStorage.setItem("lang","EN");
+            }else{
+                langSelected == "EN" ? enStyle() : arStyle()
+            }
+
+            $('.lang-btn').click(function(){
+                var langSelected =  localStorage.getItem("lang");
+                console.log()
+                if(langSelected == "EN" || langSelected == null){
+                    console.log('in cond en')
+                    arStyle()
+                    $('.project-slider').slick({ rtl: true });
+                }else{
+                    console.log('in cond ar')
+                    enStyle()
                 }
             });
             // var containerEl = document.querySelector('.project-slider');
