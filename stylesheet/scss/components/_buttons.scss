@@ -101,24 +101,24 @@
 // }
 
 
-// /*Primary (Outline)*/
-// .Primary_outline {
-//     @include btn($white, $primary_color, $primary_color);
-// }
+/*Primary (Outline)*/
+.Primary_outline {
+    @include btn($white, $primary_color, $primary_color);
+}
 
-// .Primary_outline:hover {
-//    // @include btn($primary_color, $white, $primary_color);
-// }
+.Primary_outline:hover {
+   @include btn($primary_color, $white, $primary_color);
+}
 
-// .Primary_outline:active {
-//     @include btn($primary_color, $white, $primary_color);
-//     outline: none;
-// }
+.Primary_outline:active {
+    @include btn($primary_color, $white, $primary_color);
+    outline: none;
+}
 
-// .Primary_outline:disabled {
-//     @include btn($white, $primary_color, $primary_color);
-//     opacity: 0.5;
-// }
+.Primary_outline:disabled {
+    @include btn($white, $primary_color, $primary_color);
+    opacity: 0.5;
+}
 
 
 // /*Secondary (Fill)*/
@@ -361,7 +361,7 @@
 	border-top-left-radius: 30px;
 	transition: all 0.7s;
 	body.rtl &{
-		right: -91px;
+		right: -97px;
 		left: auto;
 		border-top-left-radius: 0;
 		border-bottom-left-radius: 30px;
@@ -412,6 +412,7 @@
 			border-radius: 50%;
 			justify-content: center;
 			border: 1.5px solid #000;
+			line-height: 25px;
 		}
 	}
 	header{

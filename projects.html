@@ -6,8 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="stylesheet/bootstrtp/bootstrap.min.css">
+	<link rel="stylesheet" href="stylesheet/bootstrtp/bootstrap-rtl.min.css" disabled>
 	<link rel="stylesheet" href="stylesheet/slick/slick/slick-theme.css">
 	<link rel="stylesheet" href="stylesheet/slick/slick/slick.css">
+	<link rel="stylesheet" href="stylesheet/css/animate.css">
 	<link rel="stylesheet" href="stylesheet/css/style.css">
 	<link rel="stylesheet" href="stylesheet/css/fontello.css">
 	<style>
@@ -17,7 +19,7 @@
 			top: 0px;
 			width: 100%;
 			height: 100%;
-			z-index: 99999999999999999999999999999999999999;
+			z-index: 999999999999999999999999999999999999999999999999999;
 			background: url(https://j2n9a3i8.stackpathcdn.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
 		}
 	</style>
@@ -69,77 +71,118 @@
 				</form>
 			</div>
 		</div>
+
 		<!-- start header -->
-		<header class="main-header flex-column py-3 has-bg">
-			<div class="top-header w-100 d-flex justify-content-between align-items-center">
-				<a href="" class="link--yaku logo-text">
-					<span>P</span><span>r</span><span>o</span><span>p</span><span>e</span><span>r</span><span>t</span><span>y</span>
-					<span>M</span><span>i</span><span>s</span><span>r</span>
-				</a>
-				<div class="d-flex align-items-center">
-					<div class="call-to-action-holder mr-3">
-						<a class="tel-holder glowing" href="tel:++0123 (123) 6719900"><i class="icon-mobile"> </i></a>
-						<p>01018422892</p>
-						<a href="mailto:mailaddress@gmail.com"><i class="icon-mail"></i></a>
-						<p>mailaddress@gmail.com</p>
-						<a href="#" class="location-btn"><i class="icon-location"></i></a>
-					</div>
-					<div class="social-buttons">
-						<a href="#" class="social-buttons__button social-button social-button--facebook"
-							aria-label="Facebook">
-							<span class="social-button__inner">
-								<i class="icon-facebook"></i>
-							</span>
-						</a>
-						<a href="#" class="social-buttons__button social-button social-button--twitter"
-							aria-label="twitter">
-							<span class="social-button__inner">
-								<i class="icon-twitter"></i>
-							</span>
-						</a>
-						<a href="#" class="social-buttons__button social-button social-button--instagram"
-							aria-label="instagram">
-							<span class="social-button__inner">
-								<i class="icon-gplus"></i>
-							</span>
-						</a>
-					</div>
-					<button class="lang-btn">ع</button>
-				</div>
+		<header class="main-header flex-column py-2 has-bg">
+                <div
+                    class="top-header w-100 d-flex justify-content-center justify-content-sm-between align-items-center mb-3 mb-md-0">
 
-			</div>
-			<div class="w-100 d-flex justify-content-between align-items-center">
-				<a href="" class="logo-text ml-3">
-					<img src="images/logo.jpeg" width="90px" alt="">
-				</a>
-				<ul class="main-list">
-					<li><a data-target="#home" href="index.html">home</a></li>
-					<li class="hassubs"><a>project</a>
-						<div class="dropdown-holder">
-							<ul class="dropdown">
-								<li class="subs"><a href="projects.html">Cairo</a></li>
-								<li class="subs"><a href="projects.html">Alex</a></li>
-								<li class="subs hassubs"><a href="projects.html">Giza</a>
-									<div class="dropdown-holder">
-										<ul class="dropdown">
-											<li class="subs"><a href="projects.html">New Giza</a></li>
-											<li class="subs"><a href="projects.html">6 october</a></li>
-											<li class="subs"><a href="projects.html">Elshik Zaied</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<li><a data-target="#Services" href="index.html">Services</a>
-					</li>
-					<li><a data-target="#Partner" href="index.html">Partner</a></li>
-					<li><a data-target="#contact-us" href="index.html">contact us</a></li>
-				</ul>
-			</div>
+                    <a href="" class="link--yaku logo-text d-none d-sm-block">
+                        <span>P</span><span>r</span><span>o</span><span>p</span><span>e</span><span>r</span><span>t</span><span>y</span>
+                        <span>M</span><span>i</span><span>s</span><span>r</span>
+                    </a>
 
-		</header>
-		<!-- start slider  -->
+                    <div class="d-flex align-items-center">
+                        <div class="call-to-action-holder mr-4 pr-2">
+                            <a class="tel-holder glowing" href="tel:++0123 (123) 6719900"><i class="icon-mobile">
+                                </i></a>
+                            <a href="mailto:mailaddress@gmail.com"><i class="icon-mail"></i></a>
+                            <a href="#" class="location-btn"><i class="icon-location"></i></a>
+                        </div>
+                        <div class="social-buttons">
+                            <a href="#" class="social-buttons__button social-button social-button--facebook"
+                                aria-label="Facebook">
+                                <span class="social-button__inner">
+                                    <i class="icon-facebook"></i>
+                                </span>
+                            </a>
+                            <a href="#" class="social-buttons__button social-button social-button--twitter"
+                                aria-label="twitter">
+                                <span class="social-button__inner">
+                                    <i class="icon-twitter"></i>
+                                </span>
+                            </a>
+                            <a href="#" class="social-buttons__button social-button social-button--instagram"
+                                aria-label="instagram">
+                                <span class="social-button__inner">
+                                    <i class="icon-gplus"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <button class="lang-btn">ع</button>
+                    </div>
+
+                </div>
+                <div class="w-100 d-flex justify-content-between align-items-center">
+                    <a href="" class="logo-text ml-0 ml-sm-3">
+                        <img src="images/logo.jpeg" width="75px" alt="">
+                    </a>
+                    <!-- <div class=""> -->
+                    <nav role="navigation" class="d-block d-sm-none">
+                        <div id="menuToggle">
+
+                            <input type="checkbox" />
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <ul id="menu">
+                                <li><a href="#home">home</a></li>
+                                <li class="hassubs"><a>project</a>
+                                    <div class="dropdown-holder">
+                                        <ul class="dropdown">
+                                            <li class="subs"><a href="projects.html">Cairo</a></li>
+                                            <li class="subs"><a href="projects.html">Alex</a></li>
+                                            <li class="subs hassubs"><a href="projects.html">Giza</a>
+                                                <div class="dropdown-holder">
+                                                    <ul class="dropdown">
+                                                        <li class="subs"><a href="projects.html">New Giza</a></li>
+                                                        <li class="subs"><a href="projects.html">6 october</a></li>
+                                                        <li class="subs"><a href="projects.html">Elshik Zaied</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#Services">Services</a>
+                                </li>
+                                <li><a href="#Partner">Partner</a></li>
+                                <li class="hassubs"><a href="career.html">careers</a></li>
+                                <li><a href="#contact-us">contact us</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <ul class="main-list d-none d-sm-flex">
+                        <li><a href="#home">home</a></li>
+                        <li class="hassubs"><a>project</a>
+                            <div class="dropdown-holder">
+                                <ul class="dropdown">
+                                    <li class="subs"><a href="projects.html">Cairo</a></li>
+                                    <li class="subs"><a href="projects.html">Alex</a></li>
+                                    <li class="subs hassubs"><a href="projects.html">Giza</a>
+                                        <div class="dropdown-holder">
+                                            <ul class="dropdown">
+                                                <li class="subs"><a href="projects.html">New Giza</a></li>
+                                                <li class="subs"><a href="projects.html">6 october</a></li>
+                                                <li class="subs"><a href="projects.html">Elshik Zaied</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#Services">Services</a>
+                        </li>
+                        <li><a href="#Partner">Partner</a></li>
+                        <li class="hassubs"><a href="career.html">careers</a></li>
+                        <li><a href="#contact-us">contact us</a></li>
+                    </ul>
+                    <!-- </div> -->
+                </div>
+
+            </header>
+            <!-- end header  -->
+
 		<!-- start slider  -->
 		<div class="content">
 			<!-- trianglify pattern container -->
@@ -152,7 +195,73 @@
 				<button type="button" class="control Primary_fill" data-filter=".alex">alex</button>
 				<button type="button" class="control Primary_fill" data-filter="none">None</button>
 			</div>
-			<div class="wrapper project-card-wrapper">
+			<div class="search-project-wrapper">
+					<div class="filter-icon-holder d-block">
+							<img class="d-block" src="images/magnifier.svg" alt="Search">
+							<img class="d-none" src="images/magnifier-and-delete-mark.svg" alt="Search">
+						</div>
+						<div class=" filter-wrapper d-none">
+								<div class="filter-content">
+									<h4 class="pb-3">Search Filteration</h4>
+									<div class="dropdown-wrapper">
+									<select class="cs-select cs-skin-elastic">
+											<option value="" disabled selected>Select a Country</option>
+											<option value="france" data-class="flag-france">France</option>
+											<option value="brazil" data-class="flag-brazil">Brazil</option>
+											<option value="argentina" data-class="flag-argentina">Argentina</option>
+											<option value="south-africa" data-class="flag-safrica">South Africa</option>
+										</select>
+									<select class="cs-select cs-skin-elastic">
+											<option value="" disabled selected>Select a City</option>
+											<option value="france" data-class="flag-france">Cairo</option>
+											<option value="brazil" data-class="flag-brazil">Giza</option>
+											<option value="argentina" data-class="flag-argentina">Alex</option>
+											<option value="south-africa" data-class="flag-safrica">6 October</option>
+										</select>
+									<select class="cs-select cs-skin-elastic">
+											<option value="" disabled selected>Select a district</option>
+											<option value="france" data-class="flag-france">Tagamo3</option>
+											<option value="brazil" data-class="flag-brazil">Nasr City</option>
+											<option value="argentina" data-class="flag-argentina">Heliopolis</option>
+											<option value="south-africa" data-class="flag-safrica">Downtown</option>
+										</select>
+									</div>
+										<div class="range-slider-holder mb-20">
+											<label for="priceRange">Price</label>
+											<input type="number" class="price-range" name="priceRange">
+										</div>
+										<div class="range-inputs-holder mb-20">
+											<div class="num-input-holder">
+												<label for="">From</label>
+												<input type="number" name="" id="priceFrom">
+											</div>
+											<div class="num-input-holder">
+												<label for="">To</label>
+												<input type="number" name="" id="priceTo">
+											</div>
+										</div>
+		
+										<div class="range-slider-holder mb-20">
+											<label for="">Size</label>
+											<input type="number" class="size-range" name="sizeRange">
+										</div>
+										<div class="range-inputs-holder mb-20">
+											<div class="num-input-holder">
+												<label for="">From</label>
+												<input type="number" name="" id="sizeFrom">
+											</div>
+											<div class="num-input-holder">
+												<label for="">To</label>
+												<input type="number" name="" id="sizeTo">
+											</div>
+										</div>
+										<div class="text-center mt-4">
+											<button class="secondary_fill">search</button>
+										</div>
+								</div>
+							</div>
+			</div>
+			<div class="wrapper project-card-wrapper mt-5">
 				<div class="card mix cairo">
 					<div class="card__container card__container--closed">
 						<svg class="card__image" viewBox="0 0 1920 500">
@@ -163,33 +272,79 @@
 							</defs>
 							<image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="img/a.jpg"></image>
 						</svg>
-						<div class="project-images-slider">
-							<div class="slider-item">
-
-								<img src="images/project1.jpg" alt="">
+						<div class="row offset-height-header project-info-header-wrapper">
+							<div class="col-md-7 col-lg-8">
+								<div class="project-images-slider">
+									<div class="slider-item">
+		
+										<img src="images/project1.jpg" alt="">
+									</div>
+									<div class="slider-item">
+		
+										<img src="images/project2.jpg" alt="">
+									</div>
+									<div class="slider-item">
+		
+										<img src="images/project3.jpg" alt="">
+									</div>
+									<div class="slider-item">
+		
+										<img src="images/project1.jpg" alt="">
+									</div>
+									<div class="slider-item">
+		
+										<img src="images/project2.jpg" alt="">
+									</div>
+								</div>
 							</div>
-							<div class="slider-item">
-
-								<img src="images/project2.jpg" alt="">
+							<div class="col-md-5 col-lg-4 pr-5 mt-5">
+									<h3 class="flashit call-us-now">Call Us Now</h3>
+									<div class="call-social-wrapper">
+											<a class="whatsapp wow bounceInLeft" data-wow-duration="1s" href="https://api.whatsapp.com/send?text=We Are Here To Serve You&phone=+2001010161601"> <img src="images/icons8-whatsapp-48.png" alt=""> </a>
+											<a class="messenger wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1s" href="https://www.messenger.com/t/PAGE_ID/" class="fb-msg-btn" target="_blank"><img src="images/messenger.svg" alt=""></a> <!-- Just replace PAGE_ID in the button href with your page's ID. -->
+											<a class="phone wow bounceInLeft" data-wow-duration="1s" data-wow-duration="2s" href="tel:++0123 (123) 6719900" target="_blank"><img src="images/incoming-call.svg" alt=""></a>
+										</div>
+									<div class="row detailes-holder">
+											<div class="col-6">
+												Location
+											</div>
+											<div class="col-6">
+												New Cairo
+											</div>
+											<div class="col-6">
+												Size
+											</div>
+											<div class="col-6">
+												170m To 400m
+											</div>
+											<div class="col-6">
+												Receipt
+											</div>
+											<div class="col-6">
+												Year eg."2020"
+											</div>
+											<div class="col-6">
+												Installments Yea
+											</div>
+											<div class="col-6">
+												5
+											</div>
+											<div class="col-6">
+												Down Payment
+											</div>
+											<div class="col-6">
+												7%
+											</div>
+										</div>
 							</div>
-							<div class="slider-item">
 
-								<img src="images/project3.jpg" alt="">
-							</div>
-							<div class="slider-item">
-
-								<img src="images/project1.jpg" alt="">
-							</div>
-							<div class="slider-item">
-
-								<img src="images/project2.jpg" alt="">
-							</div>
 						</div>
+						
 						<button class="ask-now-pluse-btn Primary_fill">ask now</button>
 						<div class="card__content">
 
 							<i class="card__btn-close icon-cancel"></i>
-							<div class="card__caption">
+							<div class="card__caption text-left">
 								<h2 class="card__title">Mountain View</h2>
 								<p class="card__subtitle">Distarct 5</p>
 							</div>
@@ -216,13 +371,15 @@
 												</a>
 											</div> -->
 								</div>
-								<div class="card__copy col-md-8">
+								<div class="card__copy col-md-7 col-lg-8  mt-4">
 									Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga vero consequuntur
 									nemo similique quo rerum obcaecati quaerat, maxime cumque tempora optio maiores.
 									Obcaecati minima facilis blanditiis quae expedita sequi nulla.
 								</div>
-								<div class="col-md-4 project-detailes-wrapper">
-									<div class="row detailes-holder">
+
+								<div class="col-md-5 col-lg-4 project-detailes-wrapper mt-4 pl-3 pl-md-4">
+									
+									<!-- <div class="row detailes-holder">
 										<div class="col-6">
 											Location
 										</div>
@@ -259,7 +416,11 @@
 										<div class="col-6">
 											7%
 										</div>
-									</div>
+									</div> -->
+
+									<div class="similar-project-holder">
+											<button class="similar-project Primary_outline large-btn">Similar Projects in cairo</button>
+										</div>
 									<!-- start ask form  -->
 
 									<div class="ask-about-project-form">
@@ -286,6 +447,7 @@
 											</div>
 										</form>
 									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -616,32 +778,66 @@
 
 
 	<script src="stylesheet/bootstrtp/jquery.min.js"></script>
+	<script src="js/bootstrap-slider.js"></script>
 	<script src="stylesheet/slick/slick.min.js"></script>
 	<script src="js/vendors/trianglify.min.js"></script>
 	<script src="js/vendors/TweenMax.min.js"></script>
 	<script src="js/vendors/ScrollToPlugin.min.js"></script>
 	<script src="js/vendors/cash.min.js"></script>
 	<script src="js/Card-circle.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/selectFx.js"></script>
 	<script src="js/demo.js"></script>
+    <script src="js/wow.min.js"></script>
 	<script src="js/mixitup.min.js"></script>
 
 	<script>
+		jQuery('.filter-icon-holder').click(function(){
+            jQuery('.filter-wrapper').toggleClass('d-none fixed-filter');
+			jQuery(this).children().toggleClass('d-none d-block');
+        });
 		let isRtl = false;
-		jQuery('.lang-btn').click(function () {
-			if (!isRtl) {
-				jQuery('link[href="stylesheet/bootstrtp/bootstrap.min.css"]').prop('disabled', true);
-				jQuery('link[href="stylesheet/bootstrtp/bootstrap-rtl.min.css"]').prop('disabled', false);
-				jQuery('body').css("direction", "rtl").addClass('rtl');
-				jQuery(this).text('E');
-				isRtl = true;
-			} else {
-				jQuery('link[href="stylesheet/bootstrtp/bootstrap.min.css"]').prop('disabled', false);
-				jQuery('link[href="stylesheet/bootstrtp/bootstrap-rtl.min.css"]').prop('disabled', true);
-				jQuery('body').css("direction", "ltr").removeClass('rtl');
-				jQuery(this).text('ع');
-				isRtl = false;
-			}
-		});
+            var langSelected =  localStorage.getItem("lang");
+            function arStyle (){
+                    console.log('ar')
+                    jQuery('link[href="stylesheet/bootstrtp/bootstrap.min.css"]').prop('disabled', true);
+                    jQuery('link[href="stylesheet/bootstrtp/bootstrap-rtl.min.css"]').prop('disabled', false);
+                    jQuery('body').css("direction","rtl").addClass('rtl');
+                    jQuery('.lang-btn').text('E');
+                    localStorage.setItem("lang","AR");
+                    isRtl = false;
+            }
+            function enStyle (){
+                    console.log('en')
+                    jQuery('link[href="stylesheet/bootstrtp/bootstrap.min.css"]').prop('disabled', false);
+                    jQuery('link[href="stylesheet/bootstrtp/bootstrap-rtl.min.css"]').prop('disabled', true);
+                    jQuery('body').css("direction","ltr").removeClass('rtl');
+                    jQuery('.lang-btn').text('ع');
+                    localStorage.setItem("lang","EN");
+                    isRtl = true;
+            }
+
+            if(langSelected == null){
+                console.log('null')
+                let isRtl = false;
+                localStorage.setItem("lang","EN");
+            }else{
+                langSelected == "EN" ? enStyle() : arStyle()
+            }
+
+            jQuery('.lang-btn').click(function(){
+                var langSelected =  localStorage.getItem("lang");
+                console.log()
+                if(langSelected == "EN" || langSelected == null){
+                    console.log('in cond en')
+                    arStyle()
+                    location.reload();
+                }else{
+                    console.log('in cond ar')
+                    enStyle()
+                    location.reload();
+                }
+            });
 
 		jQuery(window).scroll(function () {
 			console.log('scroll')
@@ -687,7 +883,28 @@
 	<script>
 		// ask-now-pluse-btn
 
+        // invoke function for dropdown 
+		(function() {
+				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
+					new SelectFx(el);
+				} );
+			})();
 
+           var priceRangeSlider = jQuery(".price-range").slider({ min: 0, max: 100000, value: [0, 50000]});
+           var sizeRangeSlider = jQuery(".size-range").slider({ min: 0, max: 400, value: [0, 180]});
+
+            jQuery(".price-range").on("slide", function(slideEvt) {
+                jQuery('#priceFrom').val(slideEvt.value[0]);
+                jQuery('#priceTo').val(slideEvt.value[1]);
+            });
+            jQuery(".size-range").on("slide", function(slideEvt) {
+                jQuery('#sizeFrom').val(slideEvt.value[0]);
+                jQuery('#sizeTo').val(slideEvt.value[1]);
+            });
+            jQuery('#priceFrom').keyup(function(){
+                console.log(jQuery(this).val()); 
+                jQuery(this).val(); 
+            });
 
 
 		jQuery('.project-card-wrapper .card').click(function () {
@@ -714,6 +931,7 @@
 				arrows: true,
 				dots: true,
 				fade: true,
+				// rtl: langSelected == "EN" || langSelected == null ? false : true,
 				touchMove: false,
 				cssEase: 'ease',
 			});

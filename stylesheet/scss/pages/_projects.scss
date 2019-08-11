@@ -1,9 +1,10 @@
 .project-page-wrapper{
+    background-color: #FFF;
     .control-filter-wrapper{
         // margin-top: 130px;
         // margin-bottom: 40px;
         position: absolute;
-        top: 170px;
+        top: 150px;
     }
 
     min-height: 100vh;
@@ -32,25 +33,32 @@
     .send-message-wrapper{
         // left: -78px;
     }
-    .project-detailes-wrapper{
-        .detailes-holder{
-            padding-top: 20px;
-            padding-bottom: 20px;
-            border-radius: 4px;
-            background: #efefef;
-            box-shadow: 0 0 7.3px 1.7px rgba(0, 0, 0, 0.1);
-            color: #676767;
-            margin: 0;
-            margin-bottom: 30px;
-            &>div{
-                min-height: 30px;
-                display: flex;
-                align-items: center;
-                font-weight: 600;
-                border-bottom: 1px solid #DDD; 
-                color: #3b393d;
-            }
+    .detailes-holder{
+        padding-top: 10px;
+        padding-bottom: 0;
+        border-radius: 4px;
+        background: #FFF;
+        box-shadow: 0 0 7.3px 1.7px rgba(0, 0, 0, 0.1);
+        color: #676767;
+        margin: 0;
+        margin-bottom: 25px;
+        &>div{
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            border-bottom: 1px solid #DDD; 
+            color: #3b393d;
+            font-size: 17px;
         }
+    }
+    .project-detailes-wrapper{
+        .call-us-now{
+            text-align: center;
+            margin-bottom: 15px;
+            margin-top: -40px;
+        }
+
         .ask-about-project-form{
             // padding-top: 20px;
             // padding-bottom: 20px;
@@ -97,6 +105,10 @@
         }
     }
     .project-card-wrapper{
+        .icon-cancel:before{
+            font-size: 40px !important;
+            color : $primary_color;
+        }
         .card{
             // &.project-is-open{
             //     .icon-holder{
@@ -104,12 +116,13 @@
             //     }
             // } 
             .card__container{
+                background-color: #FFF;
+                z-index: 555;
                 .card__image{
                     display: none;
                 }
                 .project-images-slider{
-                        // height: calc(100vh - 60px);
-                        margin-top: 110px;           
+                        direction: ltr;           
                         .slick-list,
                         .slick-track {
                             height: 100%;
@@ -134,15 +147,29 @@
                             left: 45px;
                             z-index: 5;
                         }
-                }    
+                } 
+                .project-info-header-wrapper{
+                    .call-us-now{
+                        text-align: center;
+                        margin-bottom: 15px;
+                        margin-top: -40px;
+                    }   
+                }
                 &.card__container--closed{
+                    z-index: 55;
                     .project-images-slider{
                         display: none; 
+                    }
+                    .project-info-header-wrapper{
+                        display: none;
                     }
                     .card__image{
                         display: block;
                     }
                     .ask-now-pluse-btn{
+                        display: none;
+                    }
+                    .call-social-wrapper{
                         display: none;
                     }
                     & ~ .icon-holder{
@@ -155,9 +182,10 @@
                 align-items: center;
                 justify-content: space-between; 
                 position: absolute;
-                top: 0;
+                bottom: 0;
                 left: 0;
                 right: 0;
+                z-index: 5555;
                 padding: 10px 20px;
                 background: rgba(0, 0, 0, 0.8);
                 a{
@@ -202,6 +230,9 @@
                 color: $primary_color;
                 background-color: #FFF;
             }
+        }
+        @include mq("phablet") {  // width 480
+            margin-top: 120px !important;
         }
     }
 }
