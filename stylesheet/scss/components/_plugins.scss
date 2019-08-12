@@ -55,10 +55,13 @@
     animation: imageAnimation 36s linear infinite 0s; 
 }
 .cb-slideshow li div { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     z-index: 1000;
     position: absolute;
-    bottom: 30px;
-    left: 0px;
+    bottom: 70px;
+    left: 50px;
     width: 100%;
     text-align: center;
     opacity: 0;
@@ -68,11 +71,15 @@
     -o-animation: titleAnimation 36s linear infinite 0s;
     -ms-animation: titleAnimation 36s linear infinite 0s;
     animation: titleAnimation 36s linear infinite 0s; 
+    a{
+      font-size: 34px;
+      color : $primary_color; 
+    }
 }
 .cb-slideshow li div h3 {
-    font-size: 150px;
+    font-size: 80px;
     padding: 0;
-    line-height: 150px; 
+    line-height: 100px;
 }
 .cb-slideshow li:nth-child(1) span { 
     background-image: url(../../images/project1.jpg);

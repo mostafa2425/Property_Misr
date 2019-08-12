@@ -348,7 +348,7 @@
 	align-items: center;
 	padding: 20px 30px;
 	position: fixed;
-	left: -91px;
+	left: -92px;
 	background-color: $primary_color;
 	transform: rotate(90deg);
 	color: #FFF;
@@ -408,11 +408,12 @@
 			height: 25px;
 			display: flex;
 			align-items: center;
-			background: #DDD;
+			background: transparent;
 			border-radius: 50%;
 			justify-content: center;
-			border: 1.5px solid #000;
+			border: 1.5px solid #DDD;
 			line-height: 25px;
+			color : $primary_color;
 		}
 	}
 	header{
@@ -480,4 +481,13 @@
 		right: 0;
 		left: auto;
 	}	
+}
+
+.large-btn{
+	transition: all 0.6s;
+	height: 50px;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 0 41px;
+	text-transform: capitalize;
 }
